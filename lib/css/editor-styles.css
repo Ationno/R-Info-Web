@@ -29,7 +29,7 @@ html, body {
 
 .editor__wrapper {
     height: 80%;
-    width: 60%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     background: var(--editor-bg);
