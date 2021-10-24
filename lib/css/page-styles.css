@@ -23,7 +23,7 @@
 
 .grid__nav {
     display: flex;
-    background-color: var(--background-2);
+    background-color: var(--background-4);
     align-items: center;
 }
 
@@ -81,7 +81,7 @@
 
 .grid__runner {
     background-color: var(--background-2);
-    border-bottom: 1px solid var(--delimiter);
+    border-bottom: 1px solid var(--background-3);
 }
 
 .grid__credits {
@@ -103,7 +103,6 @@
     
     .grid__nav {
         grid-column: 1 / span 3;
-        background-color: var(--background-2);
     }
     
     .grid__ide {
@@ -135,7 +134,6 @@
         }
     
     .grid__runner {
-        border-top: 1px solid var(--delimiter);
         margin-right: 4%;
     }
     
