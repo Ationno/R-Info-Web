@@ -8,6 +8,7 @@
     --background-highlighter-2: #3d3d3d;
     --delimiter: #aaaaaa7f;
     --important-text: #ffffff;
+    --primary-text: #dddddd;
     --secondary-text: #aaaaaa;
 }
 
@@ -20,10 +21,12 @@
 }
 
 .grid__nav {
-    background-color: var(--background-general);
     align-self: center;
     padding-left: 2%;
-    color:var(--important-text)
+    background-color: var(--background-general);
+    color:var(--important-text);
+    font-size: 200%;
+    letter-spacing: 2px;
 }
 
 .grid__ide {
@@ -49,12 +52,9 @@
     .editor-tool-button {
         background-color: var(--background-general);
         font-size: 100%;
-        color:var(--secondary-text);
-        padding: 0.8%;
-        border-radius: 1px;
-        border-width: 0;
-        border-color: var(--delimiter);
-        border-style: solid;
+        color:var(--primary-text);
+        padding: 6px;
+        border: none;
     }
 
     .editor__body {
