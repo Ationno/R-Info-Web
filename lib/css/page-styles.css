@@ -1,6 +1,5 @@
 * {
     font-family: 'Consolas';
-    color: var(--important-text);
 }
 /* Variables */
 :root {
@@ -14,8 +13,8 @@
 
 .grid-content {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 6vh 88vh 88vh 6vh;
+    grid-template-columns: 100vw;
+    grid-template-rows: 6vh 94vh 94vh 6vh;
     background-color: var(--background-general);
     align-content: center;
 }
@@ -24,6 +23,7 @@
     background-color: var(--background-general);
     align-self: center;
     padding-left: 2%;
+    color:var(--important-text)
 }
 
 .grid__ide {
@@ -48,7 +48,8 @@
 
     .editor-tool-button {
         background-color: var(--background-general);
-        font-size: 80%;
+        font-size: 100%;
+        color:var(--secondary-text);
         padding: 0.8%;
         border-radius: 1px;
         border-width: 0;
@@ -63,6 +64,7 @@
     .editor__stats {
         align-self: center;
         padding-left: 2%;
+        color:var(--secondary-text)
     }
 
 .grid__runner {
@@ -71,12 +73,17 @@
 }
 
 .grid__credits {
-    background-color: var(--background-general);
     align-self: center;
     justify-self: center;
+    background-color: var(--background-general);
+    color: var(--secondary-text);
 }
 
 @media screen and (min-width: 1024px) {
+    * {
+        letter-spacing: 1px;
+    }
+
     .grid-content {
         grid-template-columns: repeat( 3, 1fr );
         grid-template-rows: 6vh 88vh 6vh;
@@ -116,6 +123,5 @@
     
     .grid__credits {
         grid-column: 1 / span 3;
-        background-color: var(--background-general);
     }
 }
