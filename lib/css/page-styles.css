@@ -1,0 +1,121 @@
+* {
+    font-family: 'Consolas';
+    color: var(--important-text);
+}
+/* Variables */
+:root {
+    --background-general: #212121;
+    --background-highlighter: #181818;
+    --background-highlighter-2: #3d3d3d;
+    --delimiter: #aaaaaa7f;
+    --important-text: #ffffff;
+    --secondary-text: #aaaaaa;
+}
+
+.grid-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 6vh 88vh 88vh 6vh;
+    background-color: var(--background-general);
+    align-content: center;
+}
+
+.grid__nav {
+    background-color: var(--background-general);
+    align-self: center;
+    padding-left: 2%;
+}
+
+.grid__ide {
+    background-color: var(--background-general);
+}
+    .ide__editor {
+        display: grid;
+        height: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 6% 90% 4%;
+        background-color: var(--background-highlighter-2);
+        border-top: 1px solid var(--delimiter);
+        border-right: 1px solid var(--background-highlighter-2);
+        border-bottom: 1px solid var(--delimiter);
+        border-left: 1px solid var(--background-highlighter-2);;
+    }
+
+    .editor__tools {
+        align-self: center;
+        padding-left: 1%;
+    }
+
+    .editor-tool-button {
+        background-color: var(--background-general);
+        font-size: 80%;
+        padding: 0.8%;
+        border-radius: 1px;
+        border-width: 0;
+        border-color: var(--delimiter);
+        border-style: solid;
+    }
+
+    .editor__body {
+        background-color: var(--background-general);
+    }
+
+    .editor__stats {
+        align-self: center;
+        padding-left: 2%;
+    }
+
+.grid__runner {
+    background-color: var(--background-general);
+    border-bottom: 1px solid var(--delimiter);
+}
+
+.grid__credits {
+    background-color: var(--background-general);
+    align-self: center;
+    justify-self: center;
+}
+
+@media screen and (min-width: 1024px) {
+    .grid-content {
+        grid-template-columns: repeat( 3, 1fr );
+        grid-template-rows: 6vh 88vh 6vh;
+    }
+    
+    .grid__nav {
+        grid-column: 1 / span 3;
+        background-color: var(--background-general);
+    }
+    
+    .grid__ide {
+        grid-column: 1 / span 2;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+        .ide__editor {
+            display: grid;
+            height: 100%;
+        }
+    
+        .editor__tools {
+            background-color: var(--background-highlighter-2);
+        }
+    
+        .editor__body {
+            background-color: var(--background-general);
+        }
+    
+        .editor__stats {
+            background-color: var(--background-highlighter-2);
+        }
+    
+    .grid__runner {
+        border-top: 1px solid var(--delimiter);
+        margin-right: 4%;
+    }
+    
+    .grid__credits {
+        grid-column: 1 / span 3;
+        background-color: var(--background-general);
+    }
+}
