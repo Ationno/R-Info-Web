@@ -11,29 +11,30 @@
 
 <body>
     <div class="grid-content">
-        <header class="grid__nav">R-Info IDE</header>
+        <header class="grid__nav">
+            <nav class="nav">R-Info IDE</nav>
+        </header>
         <article class="grid__ide">
             <div class="ide__editor">
-                <ul class="editor__tools">
-                    <button class="editor-tool-button">Subir</button>
-                    <button class="editor-tool-button">Bajar</button>
-                    <button class="editor-tool-button">Compartir</button>
-                </ul>
-                <div id="editorCode" class="editor__body"></div>
-                <div id="editorStats" class="editor__stats">Ln yy, Col xx</div>
+                <div class="editor__tools">
+                    <button class="editor-tool-button" id="editorUpload">Subir</button>
+                    <button class="editor-tool-button" id="editorDownload">Bajar</button>
+                    <button class="editor-tool-button" id="editorShare">Compartir</button>
+                </div>
+                <div class="editor__body" id="editorCode"></div>
+                <div class="editor__stats" id="editorStats">Ln 0, Col 0</div>
             </div>
         </article>
-        <aside class="grid__runner">
-        </aside>
+        <aside class="grid__runner"></aside>
         <footer class="grid__credits">Copyright | Mis Huevos</footer>
     </div>
-        <!-- Required Ace Libraries -->
-        <script src="lib/js/ace/ace.js"></script>
-        <script src="lib/js/ace/mode-r_info.js"></script>
-        <script src="lib/js/ace-editor/src-min/ext-language_tools.js"></script>
+    <!-- Required Ace Libraries -->
+    <script src="lib/js/ace/ace.js"></script>
+    <script src="lib/js/ace/mode-r_info.js"></script>
+    <script src="lib/js/ace/ext-language_tools.js"></script>
 
-        <!-- Custom Scripts -->
-        <script src="lib/js/editor.js"></script>
+    <!-- Custom Scripts -->
+    <script src="lib/js/editor.js"></script>
 </body>
 
 </html>

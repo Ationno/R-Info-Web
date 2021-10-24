@@ -3,9 +3,10 @@
 }
 /* Variables */
 :root {
-    --background-general: #212121;
-    --background-highlighter: #181818;
-    --background-highlighter-2: #3d3d3d;
+    --background-1: #181818;
+    --background-2: #202020;
+    --background-3: #282828;
+    --background-4: #303030;
     --delimiter: #aaaaaa7f;
     --important-text: #ffffff;
     --primary-text: #dddddd;
@@ -14,68 +15,75 @@
 
 .grid-content {
     display: grid;
-    grid-template-columns: 100vw;
+    grid-template-columns: 1fr;
     grid-template-rows: 6vh 94vh 94vh 6vh;
-    background-color: var(--background-general);
+    background-color: var(--background-2);
     align-content: center;
 }
 
 .grid__nav {
-    align-self: center;
-    padding-left: 2%;
-    background-color: var(--background-general);
-    color:var(--important-text);
-    font-size: 200%;
-    letter-spacing: 2px;
+    display: flex;
+    background-color: var(--background-2);
+    align-items: center;
 }
 
+    .nav {
+        padding-left: 2%;
+        color:var(--important-text);
+        font-size: 200%;
+        letter-spacing: 2px;
+    }
+
 .grid__ide {
-    background-color: var(--background-general);
+    background-color: var(--background-2);
 }
     .ide__editor {
         display: grid;
         height: 100%;
         grid-template-columns: 1fr;
         grid-template-rows: 6% 90% 4%;
-        background-color: var(--background-highlighter-2);
-        border-top: 1px solid var(--delimiter);
-        border-right: 1px solid var(--background-highlighter-2);
-        border-bottom: 1px solid var(--delimiter);
-        border-left: 1px solid var(--background-highlighter-2);;
+        background-color: var(--background-3);
+        
+        border-right: 1px solid var(--background-3);
+        
+        border-left: 1px solid var(--background-3);;
     }
 
     .editor__tools {
-        align-self: center;
-        padding-left: 1%;
+        display: flex;
+        height: 100%;
+        align-content: center;
+        padding-left: 2%;
     }
 
     .editor-tool-button {
-        background-color: var(--background-general);
-        font-size: 100%;
+        background: none;
+        font-size: 112.5%;
         color:var(--primary-text);
-        padding: 6px;
+        padding-left: 3%;
+        padding-right: 3%;
         border: none;
     }
 
     .editor__body {
-        background-color: var(--background-general);
+        background-color: var(--background-2);
     }
 
     .editor__stats {
         align-self: center;
         padding-left: 2%;
-        color:var(--secondary-text)
+        color:var(--primary-text)
     }
 
 .grid__runner {
-    background-color: var(--background-general);
+    background-color: var(--background-2);
     border-bottom: 1px solid var(--delimiter);
 }
 
 .grid__credits {
     align-self: center;
     justify-self: center;
-    background-color: var(--background-general);
+    background-color: var(--background-2);
     color: var(--secondary-text);
 }
 
@@ -91,7 +99,7 @@
     
     .grid__nav {
         grid-column: 1 / span 3;
-        background-color: var(--background-general);
+        background-color: var(--background-2);
     }
     
     .grid__ide {
@@ -105,15 +113,22 @@
         }
     
         .editor__tools {
-            background-color: var(--background-highlighter-2);
+            background-color: var(--background-3);
         }
     
+        .editor-tool-button {
+            font-size: 125%;
+            padding-left: 2%;
+            padding-right: 2%;
+        }
+
         .editor__body {
-            background-color: var(--background-general);
+            background-color: var(--background-2);
+            margin-left: 1%;
         }
     
         .editor__stats {
-            background-color: var(--background-highlighter-2);
+            background-color: var(--background-3);
         }
     
     .grid__runner {
