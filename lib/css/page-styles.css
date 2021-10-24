@@ -66,7 +66,11 @@
     }
 
     .editor__body {
-        background-color: var(--background-2);
+        position: relative;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
     }
 
     .editor__stats {
@@ -123,7 +127,6 @@
         }
 
         .editor__body {
-            background-color: var(--background-2);
             margin-left: 1%;
         }
     
