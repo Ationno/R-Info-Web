@@ -125,7 +125,7 @@
         }
 
         .editor__body {
-            margin-left: 1%;
+            margin: 0;
         }
     
         .editor__stats {
