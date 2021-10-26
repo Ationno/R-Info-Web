@@ -65,7 +65,7 @@
     }
 
     .editor-tool-button:hover {
-        background-color: var(--secondary-text);
+        background-color: #aaaaaa1f;
     }
 
     .editor__body {
