@@ -64,6 +64,10 @@
         font-family: 'Consolas';
     }
 
+    .editor-tool-button:hover {
+        background-color: var(--secondary-text);
+    }
+
     .editor__body {
         position: relative;
         top: 0;
