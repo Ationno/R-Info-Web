@@ -4,7 +4,7 @@ Es un proyecto con el fin de mejorar la plataforma R-Info usada ampliamente en e
 <br>
 
 ## **Por que?**
->Se dicidio comenzar el proyecto con el fin de adaptar la plataforma R-Info a tiempos corrientes, mejorar aspectos y/o caracteristicas para la comodidad del usuario y no menos importante llevar la plataforma a la web de manera que el acceso a una computadora no sea excluyente para la utilizacion del entorno
+>Se decidio comenzar el proyecto con el fin de adaptar la plataforma R-Info a tiempos corrientes, mejorar aspectos y/o caracteristicas para la comodidad del usuario y no menos importante llevar la plataforma a la web de manera que el acceso a una computadora no sea excluyente para la utilizacion del entorno
 
 <br>
 
