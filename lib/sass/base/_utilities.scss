@@ -1,0 +1,47 @@
+//* CONTAINER
+
+.container,
+.container--sm,
+.container--md,
+.container--lg,
+.container--xl {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.container--sm {
+  max-width: 600px;
+}
+
+.container--md {
+  max-width: 800px;
+}
+
+.container--lg {
+  max-width: 1200px;
+}
+
+.container-fluid {
+  width: 100%;
+  padding: 0 0.8rem;
+
+  @media (min-width: 768px) {
+    padding: 0 1.6rem;
+  }
+}
+
+
+//* FONT-WEIGHT
+
+@each $fw in 100, 200, 300, 400, 500, 600, 700, 800, 900 {
+  .fw--#{$fw} {
+    font-weight: $fw;
+  }
+}
+
+
+//* MISC
+
+.hidden {
+  display: none !important;
+}
