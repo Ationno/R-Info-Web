@@ -19,11 +19,40 @@
 
   <body>
     <header class="site-header">
-      <div class="container--lg">
+      <div class="header__container container--lg">
         <div class="header__title">
           <h1>R-info IDE</h1>
         </div>
-        <div class="mode-selector"></div>
+        <div class="mode-selector">
+          <div class="mode-option">
+            <input
+              checked
+              id="modeEditor"
+              name="mode"
+              type="radio"
+              value="editor"
+            />
+            <label for="modeEditor">Edición</label>
+          </div>
+          <div class="mode-option">
+            <input
+              id="modeRunner"
+              name="mode"
+              type="radio"
+              value="runner"
+            />
+            <label for="modeRunner">Ejecución</label>
+          </div>
+          <div class="mode-option mode-option--both">
+            <input
+              type="radio"
+              name="mode"
+              id="modeBoth"
+              value="both"
+            />
+            <label for="modeBoth">Ambos</label>
+          </div>
+        </div>
         <button class="burger" id="burger">
           <span class="burger--1"></span>
           <span class="burger--2"></span>
