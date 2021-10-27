@@ -1,5 +1,8 @@
 ﻿# **R-Info Web**
 Es un proyecto con el fin de mejorar la plataforma R-Info usada ampliamente en el primer año de la facultad de Informatica UNLP
+
+<br>
+
 Web del proyecto : https://j-josu.github.io/R-Info-Web/
 
 <br>
