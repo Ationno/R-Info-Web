@@ -1,0 +1,26 @@
+.site-header {
+  height: 8vh;
+  background-color: var(--c-background-darker);
+
+  .container--lg {
+    display: grid;
+    grid-template-columns: 3fr 3fr 1fr;
+    align-items: center;
+    height: 100%;
+  }
+}
+
+.header__title {
+  h1 {
+    margin: 0;
+    font-size: clamp(2.4rem, 5vw,3.6rem);
+  }
+}
+
+.mode-selector  {
+  background-color: #f00;
+}
+
+.burger {
+  background-color: #0f0;
+}
