@@ -1,8 +1,13 @@
-.windows-container{
+.windows-container {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 1rem 0;
+  gap: 2rem;
+
+  &.windows-container--extended {
+    padding: 1rem 2rem;
+  }
 }
 
 .window {
@@ -52,5 +57,15 @@
     .tool__text {
       display: inline;
     }
+  }
+}
+
+.window__content {
+  width: 100%;
+  height: 60vh;
+  border-radius: 0 0 0.8rem 0.8rem;
+
+  @media (min-height: 600px) {
+    height: 80vh;
   }
 }

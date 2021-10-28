@@ -52,36 +52,69 @@
     </header>
 
     <main class="windows-container container--lg">
-      <section class="window">
+      <section class="window window--active" id="windowEditor">
         <div class="window__toolbar">
           <button class="window__tool btn" id="editorUpload">
-            <img class="tool__icon" src="lib/assets/icons/document-upload.svg" alt="Abrir" />
+            <img
+              class="tool__icon"
+              src="lib/assets/icons/document-upload.svg"
+              alt="Abrir"
+            />
             <span class="tool__text">Abrir</span>
           </button>
 
           <button class="window__tool btn" id="editorDownload">
-            <img class="tool__icon" src="lib/assets/icons/document-download.svg" alt="Guardar" />
+            <img
+              class="tool__icon"
+              src="lib/assets/icons/document-download.svg"
+              alt="Guardar"
+            />
             <span class="tool__text">Guardar</span>
           </button>
 
           <button class="window__tool btn">
-            <img class="tool__icon" src="lib/assets/icons/document-add.svg" alt="Nuevo" />
+            <img
+              class="tool__icon"
+              src="lib/assets/icons/document-add.svg"
+              alt="Nuevo"
+            />
             <span class="tool__text">Nuevo</span>
           </button>
 
           <button class="window__tool btn" id="editorCopy">
-            <img class="tool__icon" src="lib/assets/icons/clipboard-copy.svg" alt="Copiar" />
+            <img
+              class="tool__icon"
+              src="lib/assets/icons/clipboard-copy.svg"
+              alt="Copiar"
+            />
             <span class="tool__text">Copiar</span>
           </button>
 
           <button class="window__tool btn" id="editorClear">
-            <img class="tool__icon" src="lib/assets/icons/trash.svg" alt="Limpiar" />
+            <img
+              class="tool__icon"
+              src="lib/assets/icons/trash.svg"
+              alt="Limpiar"
+            />
             <span class="tool__text">Limpiar</span>
           </button>
         </div>
-        <div class="window__editor" id="editorCode"></div>
+        <div class="window__content" id="editorCode"></div>
       </section>
-      <section class="hidden window"></section>
+
+      <section class="window hidden" id="windowRunner">
+        <div class="window__toolbar">
+          <button class="window__tool btn">
+            <img
+              class="tool__icon"
+              src="lib/assets/icons/document-upload.svg"
+              alt="Ejemplo"
+            />
+            <span class="tool__text">Ejemplo</span>
+          </button>
+        </div>
+        <div class="window__content"></div>
+      </section>
     </main>
 
     <!-- Required Ace Libraries -->
@@ -91,5 +124,37 @@
 
     <!-- Custom Scripts -->
     <script src="lib/js/editor.js"></script>
+
+    <script>
+      const modeSelector = document.querySelectorAll('input[name="mode"]');
+      const windowsContainer = document.querySelector(".windows-container");
+      const windowsMode = {
+        editor: document.querySelector("#windowEditor"),
+        runner: document.querySelector("#windowRunner"),
+      };
+
+      modeSelector.forEach((modeOption) => {
+        modeOption.addEventListener("change", (e) => {
+          const mode = e.target.value;
+
+          if (mode === "both") {
+            document.querySelector(".window.hidden").classList.remove("hidden");
+            windowsContainer.classList.replace(
+              "container--lg",
+              "windows-container--extended"
+            );
+          } else {
+            windowsContainer.classList.replace(
+              "windows-container--extended",
+              "container--lg"
+            );
+
+            for (const key in windowsMode)
+              windowsMode[key].classList.add("hidden");
+            windowsMode[mode].classList.remove("hidden");
+          }
+        });
+      });
+    </script>
   </body>
 </html>
