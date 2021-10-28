@@ -1,8 +1,6 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
-  min-height: 100%;
-  position: relative;
 }
 
 *,
@@ -15,7 +13,7 @@ body {
   font-size: 1.6rem;
   font-family: var(--main-font);
   background-color: var(--c-background);
-  color: var(--c-text)
+  color: var(--c-text);
 }
 
 a {
