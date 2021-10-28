@@ -1,0 +1,18 @@
+.site-header {
+  height: 6.4rem;
+  background-color: var(--c-background-darker);
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.header__title {
+  h1 {
+    margin: 0;
+    font-size: clamp(2rem, 5vw,3.2rem);
+  }
+}

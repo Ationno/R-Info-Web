@@ -1,0 +1,42 @@
+.burger {
+  background-color: transparent;
+  border: 0;
+  height: 1.6rem;
+  position: relative;
+  outline: 0;
+  width: 2.4rem;
+
+  span {
+    position: absolute;
+    content: "";
+    right: 0;
+    height: 1px;
+    width: 100%;
+    background-color: var(--c-text);
+    transition: all 0.35s ease-in-out;
+
+    &.burger--1 { top: 0; }
+    &.burger--2 { top: 50%; }
+    &.burger--3 { top: 100%; }
+  }
+
+  &:hover {
+    .burger--1 {
+      transform: rotate(-45deg);
+      top: 25%;
+      right: 50%;
+      width: 50%;
+    }
+
+    .burger--2 {
+      width: calc(80% + 2px);
+    }
+
+    .burger--3 {
+      transform: rotate(45deg);
+      top: 75%;
+      right: 50%;
+      width: 50%;
+    }
+  }
+}

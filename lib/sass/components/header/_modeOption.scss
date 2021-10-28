@@ -1,0 +1,37 @@
+.mode-selector {
+  display: flex;
+}
+
+.mode-option {
+  input {
+    display: none;
+  }
+
+  label {
+    background-color: var(--c-background);
+    padding: 1rem;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+
+    &:hover {
+      background-color: var(--c-background-light);
+    }
+  }
+}
+
+.mode-option input:checked + label {
+  z-index: 1;
+  background-color: var(--c-accent);
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.33);
+}
+
+.mode-option--both {
+  display: none;
+
+  @media (min-width: 1024px) {
+    display: block;
+  }
+}

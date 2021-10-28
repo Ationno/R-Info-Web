@@ -1,0 +1,11 @@
+@import 'base/normalize';
+@import 'base/variables';
+@import 'base/globals';
+@import 'base/utilities';
+@import 'base/buttons';
+
+@import 'components/header/header';
+@import 'components/header/modeOption';
+@import 'components/header/burger';
+
+@import 'components/main/windows';

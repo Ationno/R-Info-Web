@@ -1,37 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>R-Info IDE</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-touch-fullscreen" content="yes">
-    <link rel="stylesheet" type="text/css" href="lib/css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="lib/css/page-styles.css">
-</head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-touch-fullscreen" content="yes" />
 
-<body>
-    <div class="grid-content">
-        <header class="grid__nav">
-            <nav class="nav">R-Info IDE</nav>
-        </header>
-        <article class="grid__ide">
-            <div class="ide__editor">
-                <div class="editor__tools">
-                    <button class="editor-tool-button" id="editorUpload">Abrir</button>
-                    <button class="editor-tool-button" id="editorDownload">Guardar</button>
-                    <button class="editor-tool-button" id="editorCopy">Copiar</button>
-                    <button class="editor-tool-button" id="editorClear">Limpiar</button>
-                </div>
-                <div class="editor__body" id="editorCode"></div>
-                <div class="editor__stats" id="editorStats">Ln 0, Col 0</div>
-            </div>
-        </article>
-        <aside class="grid__runner">
-        </aside>
-        <footer class="grid__credits">Copyright | Mis Huevos</footer>
-    </div>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" type="text/css" href="lib/css/index.min.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="header__container container--lg">
+        <div class="header__title">
+          <h1>R-info IDE</h1>
+        </div>
+        <div class="mode-selector">
+          <div class="mode-option">
+            <input
+              checked
+              id="modeEditor"
+              name="mode"
+              type="radio"
+              value="editor"
+            />
+            <label for="modeEditor">Edición</label>
+          </div>
+          <div class="mode-option">
+            <input id="modeRunner" name="mode" type="radio" value="runner" />
+            <label for="modeRunner">Ejecución</label>
+          </div>
+          <div class="mode-option mode-option--both">
+            <input type="radio" name="mode" id="modeBoth" value="both" />
+            <label for="modeBoth">Ambos</label>
+          </div>
+        </div>
+        <button class="burger" id="burger">
+          <span class="burger--1"></span>
+          <span class="burger--2"></span>
+          <span class="burger--3"></span>
+        </button>
+      </div>
+    </header>
+
+    <main class="windows-container container--lg">
+      <section class="window window--active" id="windowEditor">
+        <div class="window__toolbar">
+          <button class="window__tool btn" id="editorUpload">
+            <img
+              class="tool__icon"
+              src="lib/assets/icons/document-upload.svg"
+              alt="Abrir"
+            />
+            <span class="tool__text">Abrir</span>
+          </button>
+
+          <button class="window__tool btn" id="editorDownload">
+            <img
+              class="tool__icon"
+              src="lib/assets/icons/document-download.svg"
+              alt="Guardar"
+            />
+            <span class="tool__text">Guardar</span>
+          </button>
+
+          <button class="window__tool btn">
+            <img
+              class="tool__icon"
+              src="lib/assets/icons/document-add.svg"
+              alt="Nuevo"
+            />
+            <span class="tool__text">Nuevo</span>
+          </button>
+
+          <button class="window__tool btn" id="editorCopy">
+            <img
+              class="tool__icon"
+              src="lib/assets/icons/clipboard-copy.svg"
+              alt="Copiar"
+            />
+            <span class="tool__text">Copiar</span>
+          </button>
+
+          <button class="window__tool btn" id="editorClear">
+            <img
+              class="tool__icon"
+              src="lib/assets/icons/trash.svg"
+              alt="Limpiar"
+            />
+            <span class="tool__text">Limpiar</span>
+          </button>
+        </div>
+        <div class="window__content" id="editorCode"></div>
+      </section>
+
+      <section class="window hidden" id="windowRunner">
+        <div class="window__toolbar">
+          <button class="window__tool btn">
+            <img
+              class="tool__icon"
+              src="lib/assets/icons/document-upload.svg"
+              alt="Ejemplo"
+            />
+            <span class="tool__text">Ejemplo</span>
+          </button>
+        </div>
+        <div class="window__content"></div>
+      </section>
+    </main>
+
     <!-- Required Ace Libraries -->
     <script src="lib/js/ace/ace.js"></script>
     <script src="lib/js/ace/mode-r_info.js"></script>
@@ -39,6 +124,37 @@
 
     <!-- Custom Scripts -->
     <script src="lib/js/editor.js"></script>
-</body>
 
+    <script>
+      const modeSelector = document.querySelectorAll('input[name="mode"]');
+      const windowsContainer = document.querySelector(".windows-container");
+      const windowsMode = {
+        editor: document.querySelector("#windowEditor"),
+        runner: document.querySelector("#windowRunner"),
+      };
+
+      modeSelector.forEach((modeOption) => {
+        modeOption.addEventListener("change", (e) => {
+          const mode = e.target.value;
+
+          if (mode === "both") {
+            document.querySelector(".window.hidden").classList.remove("hidden");
+            windowsContainer.classList.replace(
+              "container--lg",
+              "windows-container--extended"
+            );
+          } else {
+            windowsContainer.classList.replace(
+              "windows-container--extended",
+              "container--lg"
+            );
+
+            for (const key in windowsMode)
+              windowsMode[key].classList.add("hidden");
+            windowsMode[mode].classList.remove("hidden");
+          }
+        });
+      });
+    </script>
+  </body>
 </html>

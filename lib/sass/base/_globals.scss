@@ -1,0 +1,36 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: var(--main-font);
+  background-color: var(--c-background);
+  color: var(--c-text);
+
+  min-height: 100%;
+
+  display: grid;
+  grid-template-rows: min-content 1fr;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
