@@ -68,4 +68,8 @@
   @media (min-height: 600px) {
     height: 80vh;
   }
+  
+  @media (max-width: 768px) and (min-height: 600px) {
+    height: 72vh;
+  }
 }
