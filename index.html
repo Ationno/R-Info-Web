@@ -103,8 +103,20 @@
             <div class="tool__label-icon">
               <label for="editorFontSize">T</label>
             </div>
-            <input type="number" id="editorFontSize" min="50" max="200" value="125">
-            <div class="tool__percentage">%</div>
+            <input
+              class="tool--input__value"
+              type="number"
+              id="editorFontSize"
+              min="50"
+              max="200"
+              value="125"
+            />
+            <input
+              class="tool--input__percentage"
+              type="text"
+              disabled
+              value="%"
+            />
           </div>
         </div>
         <div class="window__content" id="editorCode"></div>
@@ -160,7 +172,6 @@
           windowsMode[target.value].classList.remove("hidden");
         }
       };
-
 
       //* Events
 
