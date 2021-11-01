@@ -1,0 +1,15 @@
+.window--editor {
+  position: relative;
+}
+
+.editor__stats {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-align: right;
+  font-size: 1rem;
+  padding: 1rem 1rem;
+  margin: 0 0.8rem 0.8rem 0;
+  background-color: var(--c-background-darker);
+  border-radius: 0.8rem;
+}
