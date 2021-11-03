@@ -1,32 +1,38 @@
 # R-Info Documentacion
-En el siguiente documento se detalla la documentacion pertinente para entender y utilizar el entorno de programacion R-Info
+
+En el siguiente documento se detalla la informacion pertinente para entender y escribir en el lenguage de programacion R-Info
 
 
 <br>
 
 
 ## Indice
-- Que es R-Info
-- Estructura del programa
-- Tipos de dato
-- Operadores logicos
-- Operadores aritmeticos
-- Operadores asignacion
-- Encadenamiento de operaciones
-- Utilizacion de ( )
-- Declaracion variables dato
-- Operaciones con variables dato
-- Instrucciones de control
-- Instrucciones de estado
-- Instrucciones de accion
-- Instrucciones de desplazamiento
-- Instrucciones de comunicacion
-- Declaracion de modulos
-- Declaracion de areas
-- Declaracion de robots
-- Declaracion de variables robot
-- Inicializacion de robots
-- Glosario de conceptos y terminos
+- [Que es R-Info](#que-es-r-info)
+- [Estructura del programa](#estructura-del-programa)
+- [Tipos de dato](#tipos-de-dato)
+- [Operadores](#operadores)
+    - [Logicos](#logicos)
+    - [Aritmeticos](#aritmeticos)
+    - [Asignacion](#asignacion)
+    - [Encadenamiento](#encadenamiento)
+    - ["( )" Parentesis](#"(-)"-parentesis)
+- [Variables dato](#variables-dato)
+    - [Declaracion](#declaracion)
+    - [Operaciones](#operaciones)
+- [Instrucciones](#instrucciones)
+    - [Control](#control)
+    - [Estado](#estado)
+    - [Accion](#accion)
+    - [Desplazamiento](#desplazamiento)
+    - [Comunicacion](#comunicacion)
+- [Secciones](#secciones)
+    - [programa](#programa)
+    - [procesos](#procesos)
+    - [areas](#areas)
+    - [robots](#robots)
+    - [variables](#variables)
+    - [comenzar y fin](#comenzar-y-fin)
+- [Glosario](#glosario)
 
 
 <br>
@@ -39,6 +45,8 @@ R-Info es un entorno de programacion donde se aprende conceptos basicos sobre co
 Este entorno ofrece la posibilidad de ademas de aprender lo ya mencionado tambien tiene la capacidad de trabajar con el paradigma de programacion concurrente ya que puede coexistir mas de un robot en el mismo mapa de manera que el programa tendra que estar preparado para esto si se usa mas de un robot
 
 Sobre el mapa donde interactuan los robots este es una matriz de 100 filas y 100 columnas que simula una ciudad, llamandoce calles a las filas y avenidas a las columnas. El extremo inferior izquierdo es la avenida 1, calle 1 y el extremo superior derecho es la avenida 100, calle 100
+
+[Indice](#indice)
 
 
 <br>
@@ -62,33 +70,34 @@ La estructura basica de un programa consiste de las siguientes secciones
 
     fin
 
-programa
 
-    Es el apartado donde se le da el nombre al programa, este puede contener letras, guiones bajos, medios y numeros
+**programa**
 
-procesos
+    Es donde se le da el nombre al programa
 
-    Es el apartado donde se pueden crear modulos (segmentos de codigo) donde se realiza una o varias tareas
+**procesos**
 
-    Esta seccion no es necesaria para que funcione el programa, puede ser omitida
+    Es donde se pueden crear modulos (segmentos de codigo) que realizen una o varias tareas
 
-areas
+**areas**
 
-    Es el apartado donde se designan la zona del mapa donde un robot puede interactuar
+    Es donde se declaran los tipos de areas del mapa
 
-robots
+**robots**
 
-    Es el apartado donde se crean los algoritmos que determinan la interaccion y/o acciones que realiza determinado tipo de robot
+    Es donde se crean los algoritmos que determinan la interaccion y/o acciones que realiza determinado tipo de robot
 
-variables
+**variables**
 
-    Es el apartado donde se crean las variables de un determinado tipo de tobot
+    Es donde se crean las variables de un determinado tipo de robot
 
-comenzar ... fin
+**comenzar y fin**
 
-    Es el apartado donde se asignan la/s area/s a las variable/s robot/s y a su ves el posicionamiento inicial en el mapa para cada variable robot que exista
+    Es el apartado donde se asignan la/s area/s y el posicionamiento inicial en el mapa para cada variable robot que exista
 
-IMPORTANTE: todas las secciones se detallaran con mas informacion a lo largo de la documentacion
+IMPORTANTE: todas las secciones se detallan en el apartado de [Secciones](#secciones)
+
+[Indice ⬆](#indice)
 
 
 <br>
@@ -118,11 +127,17 @@ booleano
         - Existencia o inexistencia
         - Permitido/habilitado o no permitido/no habilitado
 
+[Indice ⬆](#indice)
+
 
 <br>
 
 
-## Operadores logicos
+## Operadores
+
+Dentro de la sintaxis del lenguaje se encuentran los operadores que son un conjunto de caracteres que permiten la manipulacion y/o comparacion de valores explicitos o en variables
+
+### Logicos
 
 Los operadores logicos dan como resultado valores booleanos, es decir, verdad o falsedad dependiendo de las entradas
 
@@ -147,7 +162,7 @@ Operadores para datos numericos
 
 > Para simplificacion verdad equivaldra a V y falsedad a F
 
-### Operador ~
+#### Operador ~
 
 El no es un operador unario (se aplica en solo un valor), este cambia el valor logico al opuesto
 
@@ -158,7 +173,7 @@ Su tabla de verdad es:
 | ~F | V |
 | ~V | F |
 
-### Operador |
+#### Operador |
 
 El o es un operador binario (se aplica entre dos valores), este da como resultado verdad si almenos uno de los valores es verdad
 
@@ -171,7 +186,7 @@ Su tabla de verdad es:
 | F &#124; V | V |
 | V &#124; V | V |
 
-### Operador &
+#### Operador &
 
 El y es un operador binario (se aplica entre dos valores), este da como resultado verdad si solo si ambos valores son verdad
 
@@ -184,7 +199,7 @@ Su tabla de verdad es:
 | F & V | F |
 | V & V | V |
 
-### Operador =
+#### Operador =
 
 El igual es un operador binario (se aplica entre dos valores), este da como resultado verdad si solo si ambos valores son iguales respetando que sean el mismo tipo de dato
 
@@ -207,7 +222,7 @@ Su tabla de verdad con valores numericos es:
 | -22 = -22 | V |
 
 
-### Operador =
+#### Operador =
 
 El igual es un operador binario (se aplica entre dos valores), este da como resultado verdad si solo si ambos valores son diferentes respetando que sean el mismo tipo de dato
 
@@ -229,7 +244,7 @@ Su tabla de verdad con valores numericos es:
 | 99 <> -5 | V |
 | -22 <> -22 | F |
 
-### Operador <
+#### Operador <
 
 El menor es un operador binario (se aplica entre dos valores), este da como resultado verdad si solo si el primer valor es mas pequeño que el segundo
 
@@ -242,7 +257,7 @@ Su tabla de verdad con valores numericos es:
 | 99 < -5 | F |
 | -22 < -22 | F |
 
-### Operador >
+#### Operador >
 
 El mayor es un operador binario (se aplica entre dos valores), este da como resultado verdad si solo si el primer valor es mas grande que el segundo
 
@@ -256,7 +271,7 @@ Su tabla de verdad con valores numericos es:
 | -22 > -22 | F |
 
 
-### Operador <=
+#### Operador <=
 
 El menor o igual es un operador binario (se aplica entre dos valores), este da como resultado verdad si primer valor es mas pequeño que el segundo o si los dos valores son iguales
 
@@ -269,7 +284,7 @@ Su tabla de verdad con valores numericos es:
 | 99 <= -5 | F |
 | -22 <= -22 | V |
 
-### Operador >=
+#### Operador >=
 
 El mayor o igual es un operador binario (se aplica entre dos valores), este da como resultado verdad si primer valor es mas grande que el segundo o si los dos valores son iguales
 
@@ -282,11 +297,13 @@ Su tabla de verdad con valores numericos es:
 | 99 >= -5 | V |
 | -22 >= -22 | V |
 
+[Operadores ⬆](#operadores)
+
 
 <br>
 
 
-## Operadores aritmeticos
+### Aritmeticos
 
 Los operadores aritmeticos dan como resultado valores numericos enteros dependiendo de las entradas
 
@@ -298,11 +315,13 @@ Operadores
 | * | producto , multiplicacion |
 | / | , division |
 
+[Operadores ⬆](#operadores)
+
 
 <br>
 
 
-## Operadores asignacion
+### Asignacion
 
 Los operadores de asignacion se utilizan para decir el tipo de dato de una variable o para darle el valor a una variable
 
@@ -312,7 +331,7 @@ Operadores
 | : | asignacion |
 | := | asignacion |
 
-### Operador :
+#### Operador :
 
 El : se utiliza para decir que x variable sera de cierto tipo
 
@@ -320,7 +339,7 @@ El : se utiliza para decir que x variable sera de cierto tipo
 | :-: |
 | (nombre variable) : (tipo de dato) |
 
-### Operador :=
+#### Operador :=
 
 El := se utiliza para decir que x variable asumira un valor respetando el tipo de dato que representa la variable
 
@@ -328,11 +347,15 @@ El := se utiliza para decir que x variable asumira un valor respetando el tipo d
 | :-: |
 | (nombre variable) := (valor a dar) |
 
+El valor a dar puede ser un valor explicito u otra variable
+
+[Operadores ⬆](#operadores)
+
 
 <br>
 
 
-## Encadenamiento de operaciones
+### Encadenamiento
 
 Como en las matematicas se pueden armar ecuaciones con valores y operaciones, esto no es la exepcion, por ende para encadenar operaciones solo se necesitan los valores/variables y operaciones que operen con estos
 
@@ -356,11 +379,13 @@ Ejemplo con numeros y booleanos
 
     2 * 10 < 34 / 2 = V , el resultado de esto seria falso si no fuera problema el echo de que no queda claro el orden de las operaciones, para eso se utilizan los ( )
 
+[Operadores ⬆](#operadores)
+
 
 <br>
 
 
-## Utilizacion de ( )
+### "( )" Parentesis
 
 Los parentesis son de gran importancia ya que permiten denotar prioridad a la hora de la resolucion de un encadenamiento de operaciones, como se bio anteriormente en determinadas circunstancias es necesario indicar la prioridad para una correcta operacion y tambien para evitar confusiones
 
@@ -382,25 +407,51 @@ Por ejemplo
 
     ( F & V ) | ( ( ~V ) | V ), el resultado es V
 
+[Operadores ⬆](#operadores)
+
+[Indice ⬆](#indice)
+
 
 <br>
 
 
-## Declaracion de variables dato
-para declarar variables se necesita crear el segmento de varibales escribiendo la palabra clave **varibales**
+## Variables dato
 
-los tipos posible de variables son:
+Una variable es un espacio de memoria donde se guarda algun valor que representa cierto dato, este espacio se representa para el programador con el nombre que se le da a la variable y a travez de la utilizacion del nombre se puede acceder al valor para leerlo o cambiarlo
+
+### Declaracion
+Para declarar variables se necesita crear el segmento de varibales escribiendo la palabra clave **variables**, este segmento no puede ser creado en cualquier lugar, revisar el apartado de [secciones](#secciones), ahi se detalla si en una seccion pueden existir variables dato
+
+Los tipos posible de variables son:
 - numero: para representar numeros enteros
 - boolean: para representar valores logicos, verdadero o falso
 
-la creacion de la variable sigue la siguiente estructura
-nombreDeLaVariable : tipoDeVariable
+La creacion de la variable sigue la siguiente estructura
+
+    variables
+        nombreDeLaVariable : tipoDeVariable
+
+Se pueden crear la cantidad que se necesiten
+
+    variables
+        nombre1 : tipo1
+        nombre2 : tipo2
+        nombre3 : tipo2
+        nombre4 : tipo1
+
+Si son del mismo tipo pueden declararse juntas separadas por una ","
+
+    variables
+        nombre1, nombre4 : tipo1
+        nombre2, nombre3 : tipo2
+
+[Variables dato ⬆](#variables-dato)
 
 
 <br>
 
 
-## Operaciones con variables dato
+### Operaciones
 
 Como se definio previamente las variables representan valores por lo tanto existen las operaciones que definimos tambien previamente
 
@@ -450,10 +501,26 @@ Escritura
     Es muy Importante resaltar que la variable a ser escrita puede ser leida para el calculo del valor a escribir en ella ya que primero se calcula el valor final a escribir y luego se guarda
 
 
+[Variables dato ⬆](#variables-dato)
+
+[Indice ⬆](#indice)
+
+
 <br>
 
 
-## Instrucciones de control
+## Instrucciones
+
+Dentro de la sintaxis del lenguaje se encuentran las instrucciones que permiten realizar determinadas tareas/acciones
+
+Estas se dividen en
+- [Control](#control)
+- [Estado](#estado)
+- [Accion](#accion)
+- [Desplazamiento](#desplazamiento)
+- [Comunicacion](#comunicacion)
+
+### Control
 
 Las intrucciones de control son las que permiten que se ejecute cierta codigo o no, con esto se consigue que un programa reaccione dependiendo de ciertos valores o circunstancias
 
@@ -472,7 +539,7 @@ Instrucciones:
 | mientras ( condicion/es) | si |
 | repetir ( numero ) | si |
 
-### Instruccion si
+#### Instruccion si
 
 La instruccion si se utiliza para habilitar o no la ejecucion del bloque de codigo que este identado debajo de esta, este solo se ejecutara si solo si el resultado de la condicion que acompaña al si sea verdadera
 
@@ -490,7 +557,7 @@ Un ejemplo de uso del si es guardar el maximo entre dos numeros
     si ( n2 > n1 )
         max := n2
 
-### Instruccion sino
+#### Instruccion sino
 
 La instruccion sino solo se puede utilizar si previamente existe una instruccion si, ya que esta actua en consecuencia del si. El sino se utiliza para habilitar la ejecucion del bloque de codigo que este identado debajo de este si solo si la condicion que evalua el si dio falsa
 
@@ -529,7 +596,7 @@ Otra variante con el mismo efecto es
             max := n2
 
 
-### Instruccion mientras
+#### Instruccion mientras
 
 La instruccion mientras se utiliza para ejecutar cierto bloque de codigo que este identado debajo de esta tantas veces como la condicion que evalua el mientras de verdad, en caso contrario no ejecuta el codigo y sigue con lo que este por fuera
 
@@ -547,7 +614,7 @@ Un ejemplo es multiplicar un numero por si mismo mientras no supere un maximo o 
         cont := cont +1
 
 
-### Instruccion repetir
+#### Instruccion repetir
 
 La instruccion repetir se utiliza para ejecutar cierto bloque de codigo que este identado debajo de esta tantas veces como lo indique la variable o valor explicito que presigue a la instruccion
 
@@ -563,12 +630,13 @@ Un ejemplo es calcular la potencia de cierto numero
     repetir exponente
         res := res * base
 
+[Instrucciones ⬆](#instrucciones)
+
 
 <br>
 
 
-
-## Instrucciones de estado
+### Estado
 
 Las instrucciones de estado son las que devuelven un dato que representa el estado de cierta caracteristica del robot con respecto al mapa o a su inventario
 
@@ -588,11 +656,13 @@ Repecto del inventario existen las intrucciones
 | HayFlorEnLaBolsa | boolean | El booleano representa si hay una flor en el inventario |
 | HayPapelEnLaBolsa | boolean | El booleano representa si hay un papel en el inventario |
 
+[Instrucciones ⬆](#instrucciones)
+
 
 <br>
 
 
-## Instrucciones de accion
+### Accion
 
 Las instrucciones de accion son las que permiten al robot la interaccion de su inventario con respecto al mapa y viseversa
 
@@ -607,11 +677,13 @@ Existen las siguientes instruccion
 
 IMPORTANTE: de no existir el elemento para la accion ( flor o papel ) el resultado es un error
 
+[Instrucciones ⬆](#instrucciones)
+
 
 <br>
 
 
-## Instrucciones de desplazamiento
+### Desplazamiento
 
 Para el desplazamiento del robot en el mapa existen las siguientes instrucciones
 
@@ -623,7 +695,7 @@ Para el desplazamiento del robot en el mapa existen las siguientes instrucciones
 
 IMPORTANTE: tener en cuenta que los desplazamientos tienen que ser validos con respecto a las dimensiones del mapa, el area designada al robot y la posicion de los otros robots de existir otros
 
-### Instruccion mover
+#### Instruccion mover
 
 La instruccion mover se utiliza para desplazar al robot 1 posicion en la direccion que se encuentre mirando
 
@@ -634,7 +706,7 @@ La instruccion mover se utiliza para desplazar al robot 1 posicion en la direcci
 | abajo | avenidaActual -1, calleActual |
 | izquierda | avenidaActual, calleActual -1 |
 
-### Instruccion derecha
+#### Instruccion derecha
 
 La instruccion derecha se utiliza para cambiar la direccion que se encuentra mirando por la consecutiva en sentido horario
 
@@ -645,7 +717,7 @@ La instruccion derecha se utiliza para cambiar la direccion que se encuentra mir
 | abajo | izquierda |
 | izquierda | arriva |
 
-### Instruccion Pos
+#### Instruccion Pos
 
 La instruccion Pos se utiliza para ubicar al robot en un par ( avenida, calle ) determinado
 
@@ -661,24 +733,50 @@ Ejemplos
     
     Pos( -88, 45 ) el resultado es un error ya que el numero de avenida debe estar dentro del rango 1 - 100
 
+[Instrucciones ⬆](#instrucciones)
+
 
 <br>
 
 
-## Instrucciones de comunicacion de robot
-
-## Declaracion de modulos
-
-## Declaracion de areas
-
-## Declaracion de robots
-
-## Declaracion de variables robot
-
-## Inicializacion de robots
+### Comunicacion
 
 
-## Glosario de conceptos y terminos
+[Instrucciones ⬆](#instrucciones)
+
+[Indice ⬆](#indice)
+
+
+<br>
+
+
+## Secciones
+
+Un programa en este lenguage se constituye de las siguientes secciones que se encargan cada una de definir un aspecto del programa. Estas se detallan a continuacion
+
+### programa
+
+### procesos
+
+### areas
+
+### robots
+
+### variables
+
+### comenzar y fin
+
+
+
+[Indice ⬆](#indice)
+
+
+<br>
+
+
+## Glosario
+
+Estas son definiciones de terminos y conceptos utilizados en el documento
 
 1. camelCase: es la escritura de un conjunto de palabras donde se intercambian los espacios por la mayuscula de la palabra siguiente
 
@@ -696,8 +794,6 @@ Ejemplos
 
 1. Parametro formal: son las variables donde se reciben los valores que necesita el modulo para realizar su/s tareas/s y donde de ser necesario devuelve informacion
 
-1. Variable: espacio de memoria donde se guarda algun valor, este espacio se representa con el nombre que se le da a la variable y a travez de la utilizacion del nombre se puede acceder al valor y/o sobreescribirlo
-
 1. Condicion: valor booleano u operacion logica ( tambien puede ser conjunto de operaciones logicas ) que determina si se realiza o no determinada instruccion/es+
 
 1. Validacion: es el acto de verificar si se cumplen determinadas condiciones/valores
@@ -707,3 +803,16 @@ Ejemplos
 1. Identacion: dejar un espacio determinado antes de una linea de codigo para indicar que pertenecen a cierto bloque de codigo y/o seccion del programa
 
 1. Bloque de codigo: conjunto de lineas de codigo con la misma identacion que se ejecutan juntas en el orden en el que estan escritas
+
+[Glosario ⬆](#glosario)
+
+[Indice ⬆](#indice)
+
+
+<br>
+<br>
+
+
+Hecho por compañeros de la facultad
+
+Fin del documento
