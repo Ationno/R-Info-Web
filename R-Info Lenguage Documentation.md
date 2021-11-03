@@ -4,6 +4,7 @@ En el siguiente documento se detalla la informacion pertinente para entender y e
 
 
 <br>
+<br>
 
 
 ## Indice
@@ -15,7 +16,7 @@ En el siguiente documento se detalla la informacion pertinente para entender y e
     - [Aritmeticos](#aritmeticos)
     - [Asignacion](#asignacion)
     - [Encadenamiento](#encadenamiento)
-    - ["( )" Parentesis](#"(-)"-parentesis)
+    - [Parentesis](#parentesis)
 - [Variables dato](#variables-dato)
     - [Declaracion](#declaracion)
     - [Operaciones](#operaciones)
@@ -36,6 +37,7 @@ En el siguiente documento se detalla la informacion pertinente para entender y e
 
 
 <br>
+<br>
 
 
 ## Que es R-Info
@@ -46,9 +48,10 @@ Este entorno ofrece la posibilidad de ademas de aprender lo ya mencionado tambie
 
 Sobre el mapa donde interactuan los robots este es una matriz de 100 filas y 100 columnas que simula una ciudad, llamandoce calles a las filas y avenidas a las columnas. El extremo inferior izquierdo es la avenida 1, calle 1 y el extremo superior derecho es la avenida 100, calle 100
 
-[Indice](#indice)
+[indice](#indice)
 
 
+<br>
 <br>
 
 
@@ -70,6 +73,7 @@ La estructura basica de un programa consiste de las siguientes secciones
 
     fin
 
+<br>
 
 **programa**
 
@@ -95,11 +99,12 @@ La estructura basica de un programa consiste de las siguientes secciones
 
     Es el apartado donde se asignan la/s area/s y el posicionamiento inicial en el mapa para cada variable robot que exista
 
-IMPORTANTE: todas las secciones se detallan en el apartado de [Secciones](#secciones)
+*IMPORTANTE: todas las secciones se detallan en el apartado de [Secciones](#secciones)*
 
-[Indice ⬆](#indice)
+[indice ⬆](#indice)
 
 
+<br>
 <br>
 
 
@@ -107,11 +112,15 @@ IMPORTANTE: todas las secciones se detallan en el apartado de [Secciones](#secci
 
 Para trabajar con informacion o valores se disponen dos formas de representacion
 
+<br>
+
 numero
 
     El tipo de dato numero se utiliza para representar cantidades, es decir, como los el conjunto de los numeros enteros en matematica
 
     Estos van desde el -2^31 ( -2.147.483.648 ) hasta el 2^31 ( 2.147.483.648 )
+
+<br>
 
 booleano
 
@@ -123,19 +132,25 @@ booleano
         "F" para representar la falsedad
     
     Tambien se puede utilizar para representar:
-    
+
         - Existencia o inexistencia
         - Permitido/habilitado o no permitido/no habilitado
 
-[Indice ⬆](#indice)
+[indice ⬆](#indice)
 
 
+<br>
 <br>
 
 
 ## Operadores
 
 Dentro de la sintaxis del lenguaje se encuentran los operadores que son un conjunto de caracteres que permiten la manipulacion y/o comparacion de valores explicitos o en variables
+
+
+<br>
+<br>
+
 
 ### Logicos
 
@@ -162,6 +177,8 @@ Operadores para datos numericos
 
 > Para simplificacion verdad equivaldra a V y falsedad a F
 
+<br>
+
 #### Operador ~
 
 El no es un operador unario (se aplica en solo un valor), este cambia el valor logico al opuesto
@@ -172,6 +189,8 @@ Su tabla de verdad es:
 | :-: | :-: |
 | ~F | V |
 | ~V | F |
+
+<br>
 
 #### Operador |
 
@@ -186,6 +205,8 @@ Su tabla de verdad es:
 | F &#124; V | V |
 | V &#124; V | V |
 
+<br>
+
 #### Operador &
 
 El y es un operador binario (se aplica entre dos valores), este da como resultado verdad si solo si ambos valores son verdad
@@ -198,6 +219,8 @@ Su tabla de verdad es:
 | V & F | F |
 | F & V | F |
 | V & V | V |
+
+<br>
 
 #### Operador =
 
@@ -221,6 +244,7 @@ Su tabla de verdad con valores numericos es:
 | 99 = -5 | F |
 | -22 = -22 | V |
 
+<br>
 
 #### Operador =
 
@@ -244,6 +268,8 @@ Su tabla de verdad con valores numericos es:
 | 99 <> -5 | V |
 | -22 <> -22 | F |
 
+<br>
+
 #### Operador <
 
 El menor es un operador binario (se aplica entre dos valores), este da como resultado verdad si solo si el primer valor es mas pequeño que el segundo
@@ -256,6 +282,8 @@ Su tabla de verdad con valores numericos es:
 | 1 < 47 | V |
 | 99 < -5 | F |
 | -22 < -22 | F |
+
+<br>
 
 #### Operador >
 
@@ -270,6 +298,7 @@ Su tabla de verdad con valores numericos es:
 | 99 > -5 | V |
 | -22 > -22 | F |
 
+<br>
 
 #### Operador <=
 
@@ -283,6 +312,8 @@ Su tabla de verdad con valores numericos es:
 | 1 <= 47 | V |
 | 99 <= -5 | F |
 | -22 <= -22 | V |
+
+<br>
 
 #### Operador >=
 
@@ -308,28 +339,26 @@ Su tabla de verdad con valores numericos es:
 Los operadores aritmeticos dan como resultado valores numericos enteros dependiendo de las entradas
 
 Operadores
-| Sintaxis | Nombre/s |
+| Sintaxis | Funcion |
 | :-: | :-: |
 | + | adicion , suma |
 | - | sustraccion , resta |
 | * | producto , multiplicacion |
 | / | , division |
 
-[Operadores ⬆](#operadores)
-
-
 <br>
-
 
 ### Asignacion
 
 Los operadores de asignacion se utilizan para decir el tipo de dato de una variable o para darle el valor a una variable
 
 Operadores
-| Sintaxis | Nombre/s |
+| Sintaxis | Funcion |
 | :-: | :-: |
 | : | asignacion |
 | := | asignacion |
+
+<br>
 
 #### Operador :
 
@@ -338,6 +367,8 @@ El : se utiliza para decir que x variable sera de cierto tipo
 | Utilizacion |
 | :-: |
 | (nombre variable) : (tipo de dato) |
+
+<br>
 
 #### Operador :=
 
@@ -385,11 +416,11 @@ Ejemplo con numeros y booleanos
 <br>
 
 
-### "( )" Parentesis
+### Parentesis
 
 Los parentesis son de gran importancia ya que permiten denotar prioridad a la hora de la resolucion de un encadenamiento de operaciones, como se bio anteriormente en determinadas circunstancias es necesario indicar la prioridad para una correcta operacion y tambien para evitar confusiones
 
-IMPORTANTE: siempre que existe "(", un parentesis de apertura, debe existir su correspondiente ")", parentesis de cierre,
+*IMPORTANTE: siempre que existe "(", un parentesis de apertura, debe existir su correspondiente ")", parentesis de cierre*
 
 Reestructuracion de ejemplo previo
 
@@ -409,9 +440,10 @@ Por ejemplo
 
 [Operadores ⬆](#operadores)
 
-[Indice ⬆](#indice)
+[indice ⬆](#indice)
 
 
+<br>
 <br>
 
 
@@ -419,7 +451,10 @@ Por ejemplo
 
 Una variable es un espacio de memoria donde se guarda algun valor que representa cierto dato, este espacio se representa para el programador con el nombre que se le da a la variable y a travez de la utilizacion del nombre se puede acceder al valor para leerlo o cambiarlo
 
+<br>
+
 ### Declaracion
+
 Para declarar variables se necesita crear el segmento de varibales escribiendo la palabra clave **variables**, este segmento no puede ser creado en cualquier lugar, revisar el apartado de [secciones](#secciones), ahi se detalla si en una seccion pueden existir variables dato
 
 Los tipos posible de variables son:
@@ -447,9 +482,7 @@ Si son del mismo tipo pueden declararse juntas separadas por una ","
 
 [Variables dato ⬆](#variables-dato)
 
-
 <br>
-
 
 ### Operaciones
 
@@ -503,9 +536,10 @@ Escritura
 
 [Variables dato ⬆](#variables-dato)
 
-[Indice ⬆](#indice)
+[indice ⬆](#indice)
 
 
+<br>
 <br>
 
 
@@ -519,6 +553,8 @@ Estas se dividen en
 - [Accion](#accion)
 - [Desplazamiento](#desplazamiento)
 - [Comunicacion](#comunicacion)
+
+<br>
 
 ### Control
 
@@ -539,6 +575,8 @@ Instrucciones:
 | mientras ( condicion/es) | si |
 | repetir ( numero ) | si |
 
+<br>
+
 #### Instruccion si
 
 La instruccion si se utiliza para habilitar o no la ejecucion del bloque de codigo que este identado debajo de esta, este solo se ejecutara si solo si el resultado de la condicion que acompaña al si sea verdadera
@@ -556,6 +594,8 @@ Un ejemplo de uso del si es guardar el maximo entre dos numeros
         max := n1
     si ( n2 > n1 )
         max := n2
+
+<br>
 
 #### Instruccion sino
 
@@ -595,6 +635,7 @@ Otra variante con el mismo efecto es
         si ( n1 <> n2 )
             max := n2
 
+<br>
 
 #### Instruccion mientras
 
@@ -613,6 +654,7 @@ Un ejemplo es multiplicar un numero por si mismo mientras no supere un maximo o 
         n := n * n
         cont := cont +1
 
+<br>
 
 #### Instruccion repetir
 
@@ -632,9 +674,7 @@ Un ejemplo es calcular la potencia de cierto numero
 
 [Instrucciones ⬆](#instrucciones)
 
-
 <br>
-
 
 ### Estado
 
@@ -658,9 +698,7 @@ Repecto del inventario existen las intrucciones
 
 [Instrucciones ⬆](#instrucciones)
 
-
 <br>
-
 
 ### Accion
 
@@ -675,13 +713,11 @@ Existen las siguientes instruccion
 | depositarFlor | deposita una flor del inventario en la esquina actual |
 | depositarPapel | deposita un papel del inventario en la esquina actual |
 
-IMPORTANTE: de no existir el elemento para la accion ( flor o papel ) el resultado es un error
+*IMPORTANTE: de no existir el elemento para la accion ( flor o papel ) el resultado es un error*
 
 [Instrucciones ⬆](#instrucciones)
 
-
 <br>
-
 
 ### Desplazamiento
 
@@ -693,7 +729,9 @@ Para el desplazamiento del robot en el mapa existen las siguientes instrucciones
 | derecha |
 | Pos( avenida, calle ) |
 
-IMPORTANTE: tener en cuenta que los desplazamientos tienen que ser validos con respecto a las dimensiones del mapa, el area designada al robot y la posicion de los otros robots de existir otros
+*IMPORTANTE: tener en cuenta que los desplazamientos tienen que ser validos con respecto a las dimensiones del mapa, el area designada al robot y la posicion de los otros robots de existir otros*
+
+<br>
 
 #### Instruccion mover
 
@@ -706,6 +744,8 @@ La instruccion mover se utiliza para desplazar al robot 1 posicion en la direcci
 | abajo | avenidaActual -1, calleActual |
 | izquierda | avenidaActual, calleActual -1 |
 
+<br>
+
 #### Instruccion derecha
 
 La instruccion derecha se utiliza para cambiar la direccion que se encuentra mirando por la consecutiva en sentido horario
@@ -716,6 +756,8 @@ La instruccion derecha se utiliza para cambiar la direccion que se encuentra mir
 | derecha | abajo |
 | abajo | izquierda |
 | izquierda | arriva |
+
+<br>
 
 #### Instruccion Pos
 
@@ -735,24 +777,99 @@ Ejemplos
 
 [Instrucciones ⬆](#instrucciones)
 
-
 <br>
-
 
 ### Comunicacion
 
+La comunicacion es la tranferencia de mensajes hacia el usuario o entre robots
+
+Las instrucciones son
+- Informar
+- EnviarMensaje
+- RecibirMensaje
+
+<br>
+
+#### Instruccion Informar
+
+Para la comunicacion con el usuario, en otras palabras mostrar informacion en pantalla, existe la instruccion Informar
+
+| Sintaxis |
+| :-: |
+| Informar( 'cadenaDeCaracteres', valor ) |
+
+*IMPORTANTE: el primer parametro no es necesario, puede no utilizarse. El segundo parametro es un valor explicito o variable de cualquier tipo*
+
+Ejemplo de uso
+
+    Informar( 16 )
+    Informar( 'minimo', cantMin )
+    Informar( V )
+    Informar( floresJuntadas )
+
+<br>
+
+#### Instruccion EnviarMensaje
+
+Esta instruccion se utiliza para enviar un valor a un receptor determinado, siendo una variable robot el receptor
+
+| Sintaxis |
+| :-: |
+| EnviarMensaje( valor, nombreVariableRobot ) |
+
+*IMPORTANTE: el primer parametro es un valor explicito o variable de cualquier tipo*
+
+Esta instruccion es asincronica, es decir, se ejecuta y continua la ejecucion. Al emisor del mensaje no le afecta si el receptor esta esperando o no el mensaje
+
+Ejemplo de uso
+
+    EnviarMensaje( 16, robot1 )
+    EnviarMensaje( min, trabajador )
+    EnviarMensaje( V, organizador )
+
+<br>
+
+#### Instruccion RecibirMensaje
+
+Esta instruccion se utiliza para recibir un valor de un emisor determinado o no determinado, siendo una variable robot el emisor
+
+| Sintaxis | Emisor |
+| :-: | :-: |
+| RecibirMensaje( variableReceptora, nombreEmisor ) | especifico |
+| RecibirMensaje( variableReceptora, * ) | cualquiera |
+
+Esta instruccion es sincronica, es decir, hasta no recibir el mensaje esperado no continua la ejecucion del codigo
+
+El primer parametro es una variable donde se guardara el valor que se envio en el mensaje, esta variable debe ser del mismo tipo que el valor enviado
+
+Si se especifica un emisor puntual el robot que ejecuta la instruccion quedara esperando el mensaje en el caso de que este no este en la cola de mensaje del robot
+
+Ejemplo de uso
+
+    RecibirMensaje( numAvenida, coordinador )
+    RecibirMensaje( continuar, jefe )
+
+Si no se especifica un emisor puntual el robot que ejecuta la instruccion quedara esperando un mensaje de cualquier emisor en el caso de que no haya ninguno en la cola de mensaje del robot
+
+Ejemplo de uso
+
+    RecibirMensaje( codigo, * )
+    RecibirMensaje( parar, * )
 
 [Instrucciones ⬆](#instrucciones)
 
-[Indice ⬆](#indice)
+[indice ⬆](#indice)
 
 
+<br>
 <br>
 
 
 ## Secciones
 
 Un programa en este lenguage se constituye de las siguientes secciones que se encargan cada una de definir un aspecto del programa. Estas se detallan a continuacion
+
+<br>
 
 ### programa
 
@@ -766,11 +883,10 @@ Un programa en este lenguage se constituye de las siguientes secciones que se en
 
 ### comenzar y fin
 
+[indice ⬆](#indice)
 
 
-[Indice ⬆](#indice)
-
-
+<br>
 <br>
 
 
@@ -806,13 +922,13 @@ Estas son definiciones de terminos y conceptos utilizados en el documento
 
 [Glosario ⬆](#glosario)
 
-[Indice ⬆](#indice)
+[indice](#indice)
 
 
 <br>
 <br>
 
 
-Hecho por compañeros de la facultad
+Hecho por compañeros de la Facultad
 
 Fin del documento
