@@ -3,7 +3,7 @@
 En el siguiente documento se detalla la informacion pertinente para entender y escribir en el lenguage de programacion R-Info
 
 
-> **El uso de este material es bajo el concentimiento propio del usuario** 
+> **El uso de este material es bajo el consentimiento del propio usuario** 
 
 
 <br>
@@ -82,27 +82,27 @@ La estructura basica de un programa consiste de las siguientes secciones
 
 <br>
 
-**programa**
+- **programa**
 
     Es donde se le da el nombre al programa
 
-**procesos**
+- **procesos**
 
     Es donde se pueden crear modulos (segmentos de codigo) que realizen una o varias tareas
 
-**areas**
+- **areas**
 
     Es donde se declaran los tipos de areas del mapa
 
-**robots**
+- **robots**
 
     Es donde se crean los algoritmos que determinan la interaccion y/o acciones que realiza determinado tipo de robot
 
-**variables**
+- **variables**
 
     Es donde se crean las variables de un determinado tipo de robot
 
-**comenzar y fin**
+- **comenzar y fin**
 
     Es el apartado donde se asignan la/s area/s y el posicionamiento inicial en el mapa para cada variable robot que exista
 
@@ -124,27 +124,27 @@ Para trabajar con informacion o valores se disponen dos formas de representacion
 <br>
 
 
-numero
+### numero
 
-    El tipo de dato numero se utiliza para representar cantidades, es decir, como los el conjunto de los numeros enteros en matematica
+El tipo de dato numero se utiliza para representar cantidades, es decir, como los el conjunto de los numeros enteros en matematica
 
-    Estos van desde el -2^31 ( -2.147.483.648 ) hasta el 2^31 ( 2.147.483.648 )
+Estos van desde el -2^31 ( -2.147.483.648 ) hasta el 2^31 ( 2.147.483.648 )
 
 <br>
 
-booleano
+### booleano
 
-    El tipo de dato booleano se utiliza para representar si algo es verdad o si algo es falso, es decir, la veracidad de una afirmacion o sentencia
+El tipo de dato booleano se utiliza para representar si algo es verdad o si algo es falso, es decir, la veracidad de una afirmacion o sentencia
 
-    Sus dos unicos posible valores son
+Sus dos unicos posible valores son
 
-        "V" para representar la verdad
-        "F" para representar la falsedad
-    
-    Tambien se puede utilizar para representar:
+- "V" para representar la verdad
+- "F" para representar la falsedad
 
-        - Existencia o inexistencia
-        - Permitido/habilitado o no permitido/no habilitado
+Tambien se puede utilizar para representar:
+
+- Existencia o inexistencia
+- Permitido/habilitado o no permitido/no habilitado
 
 [indice](#indice)
 
@@ -190,7 +190,7 @@ Operadores para datos numericos
 
 <br>
 
-#### Operador ~
+### Operador ~
 
 El no es un operador unario (se aplica en solo un valor), este cambia el valor logico al opuesto
 
@@ -203,7 +203,7 @@ Su tabla de verdad es:
 
 <br>
 
-#### Operador |
+### Operador |
 
 El o es un operador binario (se aplica entre dos valores), este da como resultado verdad si almenos uno de los valores es verdad
 
@@ -218,7 +218,7 @@ Su tabla de verdad es:
 
 <br>
 
-#### Operador &
+### Operador &
 
 El y es un operador binario (se aplica entre dos valores), este da como resultado verdad si solo si ambos valores son verdad
 
@@ -233,7 +233,7 @@ Su tabla de verdad es:
 
 <br>
 
-#### Operador =
+### Operador =
 
 El igual es un operador binario (se aplica entre dos valores), este da como resultado verdad si solo si ambos valores son iguales respetando que sean el mismo tipo de dato
 
@@ -257,7 +257,7 @@ Su tabla de verdad con valores numericos es:
 
 <br>
 
-#### Operador =
+### Operador =
 
 El igual es un operador binario (se aplica entre dos valores), este da como resultado verdad si solo si ambos valores son diferentes respetando que sean el mismo tipo de dato
 
@@ -281,7 +281,7 @@ Su tabla de verdad con valores numericos es:
 
 <br>
 
-#### Operador <
+### Operador <
 
 El menor es un operador binario (se aplica entre dos valores), este da como resultado verdad si solo si el primer valor es mas pequeño que el segundo
 
@@ -296,7 +296,7 @@ Su tabla de verdad con valores numericos es:
 
 <br>
 
-#### Operador >
+### Operador >
 
 El mayor es un operador binario (se aplica entre dos valores), este da como resultado verdad si solo si el primer valor es mas grande que el segundo
 
@@ -311,7 +311,7 @@ Su tabla de verdad con valores numericos es:
 
 <br>
 
-#### Operador <=
+### Operador <=
 
 El menor o igual es un operador binario (se aplica entre dos valores), este da como resultado verdad si primer valor es mas pequeño que el segundo o si los dos valores son iguales
 
@@ -326,7 +326,7 @@ Su tabla de verdad con valores numericos es:
 
 <br>
 
-#### Operador >=
+### Operador >=
 
 El mayor o igual es un operador binario (se aplica entre dos valores), este da como resultado verdad si primer valor es mas grande que el segundo o si los dos valores son iguales
 
@@ -372,7 +372,7 @@ Operadores
 
 <br>
 
-#### Operador :
+### Operador :
 
 El : se utiliza para decir que x variable sera de cierto tipo
 
@@ -382,7 +382,7 @@ El : se utiliza para decir que x variable sera de cierto tipo
 
 <br>
 
-#### Operador :=
+### Operador :=
 
 El := se utiliza para decir que x variable asumira un valor respetando el tipo de dato que representa la variable
 
@@ -417,11 +417,13 @@ Ejemplo con booleanos
 
 Ejemplo con numeros y booleanos
 
-    Normalmente se realizan operaciones aritmeticas y a esos resultados se aplican operadores logicos correspondientes de manera que el resultado final sean valores booleanos que reflejen un estado
+Normalmente se realizan operaciones aritmeticas y a esos resultados se aplican operadores logicos correspondientes de manera que el resultado final sean valores booleanos que reflejen un estado
 
     Se quiere saber si el doble de 10 es menor a la mitad de 34
 
-    2 * 10 < 34 / 2 = V , el resultado de esto seria falso si no fuera problema el echo de que no queda claro el orden de las operaciones, para eso se utilizan los ( )
+    2 * 10 < 34 / 2 = V
+
+El resultado de lo anterior seria falso si no fuera problema el echo de que no queda claro el orden de las operaciones, para eso se utilizan los ( )
 
 [Operadores ⬆](#operadores)
 
@@ -438,19 +440,19 @@ Los parentesis son de gran importancia ya que permiten denotar prioridad a la ho
 
 Reestructuracion de ejemplo previo
 
-    Con el uso de parentesis el ejemplo "Se quiere saber si el doble de 10 es menor a la mitad de 34", se debe escribir como
+    Se quiere saber si el doble de 10 es menor a la mitad de 34
 
     ( 2 * 10 ) < ( 34 / 2 ) = V , el resultado es F
 
-    Ahora queda claro que primero deben resolverse las operaicones aritmeticas y luego las logicas
+Ahora queda claro que primero deben resolverse las operaicones aritmeticas y luego las logicas
 
 La utilizacion de parentesis permite realizar encadenamiento de operaciones mas complejas
 
 Por ejemplo
 
-    Se quiere saber si dos valores son verdaderos o si es verdadera la negacion de un tercero o el valor de un cuarto
+    Se quiere saber si dos valores son V o si es V la negacion de un tercero o el valor de un cuarto
 
-    ( F & V ) | ( ( ~V ) | V ), el resultado es V
+    ( F & V ) | ( ( ~ V ) | V ), el resultado es V
 
 [Operadores ⬆](#operadores)
 
@@ -510,7 +512,7 @@ Basicamente las operaciones con variables se dividne en dos grandes grupos, las 
 
 Lectura
 
-    Para la utilizacion de el valor que representa una variable es tan sencillo como poner el nombre de variable en el lugar donde corresponderia que este el valor que esta representa
+Para la utilizacion de el valor que representa una variable es tan sencillo como poner el nombre de variable en el lugar donde corresponderia que este el valor que esta representa
 
     Por ejemplo:
     
@@ -525,7 +527,7 @@ Lectura
 
 Escritura
 
-    Para la escritura de un valor en una variable se debe poner la variable a escribir o reescribir su valor luego la sintaxis de asignacion ( := ) y a continuacion el valor explicito o las operaciones que den como resultado un valor, siempre respetando los tipos de dato
+Para la escritura de un valor en una variable se debe poner la variable a escribir o reescribir su valor luego la sintaxis de asignacion ( := ) y a continuacion el valor explicito o las operaciones que den como resultado un valor, siempre respetando los tipos de dato
 
     Por ejemplo:
 
@@ -598,7 +600,7 @@ Instrucciones:
 
 <br>
 
-#### Instruccion si
+### Instruccion si
 
 La instruccion si se utiliza para habilitar o no la ejecucion del bloque de codigo que este identado debajo de esta, este solo se ejecutara si solo si el resultado de la condicion que acompaña al si sea verdadera
 
@@ -618,7 +620,7 @@ Un ejemplo de uso del si es guardar el maximo entre dos numeros
 
 <br>
 
-#### Instruccion sino
+### Instruccion sino
 
 La instruccion sino solo se puede utilizar si previamente existe una instruccion si, ya que esta actua en consecuencia del si. El sino se utiliza para habilitar la ejecucion del bloque de codigo que este identado debajo de este si solo si la condicion que evalua el si dio falsa
 
@@ -658,7 +660,7 @@ Otra variante con el mismo efecto es
 
 <br>
 
-#### Instruccion mientras
+### Instruccion mientras
 
 La instruccion mientras se utiliza para ejecutar cierto bloque de codigo que este identado debajo de esta tantas veces como la condicion que evalua el mientras de verdad, en caso contrario no ejecuta el codigo y sigue con lo que este por fuera
 
@@ -677,7 +679,7 @@ Un ejemplo es multiplicar un numero por si mismo mientras no supere un maximo o 
 
 <br>
 
-#### Instruccion repetir
+### Instruccion repetir
 
 La instruccion repetir se utiliza para ejecutar cierto bloque de codigo que este identado debajo de esta tantas veces como lo indique la variable o valor explicito que presigue a la instruccion
 
@@ -754,7 +756,7 @@ Para el desplazamiento del robot en el mapa existen las siguientes instrucciones
 
 <br>
 
-#### Instruccion mover
+### Instruccion mover
 
 La instruccion mover se utiliza para desplazar al robot 1 posicion en la direccion que se encuentre mirando
 
@@ -767,7 +769,7 @@ La instruccion mover se utiliza para desplazar al robot 1 posicion en la direcci
 
 <br>
 
-#### Instruccion derecha
+### Instruccion derecha
 
 La instruccion derecha se utiliza para cambiar la direccion que se encuentra mirando por la consecutiva en sentido horario
 
@@ -780,7 +782,7 @@ La instruccion derecha se utiliza para cambiar la direccion que se encuentra mir
 
 <br>
 
-#### Instruccion Pos
+### Instruccion Pos
 
 La instruccion Pos se utiliza para ubicar al robot en un par ( avenida, calle ) determinado
 
@@ -790,11 +792,11 @@ La instruccion Pos se utiliza para ubicar al robot en un par ( avenida, calle ) 
 
 Ejemplos
 
-    Pos( 1, 33 ) , el resultado es que el robot ahora se encuentra en la avenida 1 y calle 33
+    Pos( 1, 33 ) resulta en que el robot ahora se encuentra en la avenida 1 y calle 33
 
-    Pos( 50, 50 ) el resultado es que el robot ahora se encuentra en la avenida 50 y calle 50
+    Pos( 50, 50 ) resulta en que el robot ahora se encuentra en la avenida 50 y calle 50
     
-    Pos( -88, 45 ) el resultado es un error ya que el numero de avenida debe estar dentro del rango 1 - 100
+    Pos( -88, 45 ) resulta en error ya que el numero de avenida debe estar dentro del rango 1 - 100
 
 [Instrucciones ⬆](#instrucciones)
 
@@ -811,7 +813,7 @@ Las instrucciones son
 
 <br>
 
-#### Instruccion Informar
+### Instruccion Informar
 
 Para la comunicacion con el usuario, en otras palabras mostrar informacion en pantalla, existe la instruccion Informar
 
@@ -830,7 +832,7 @@ Ejemplo de uso
 
 <br>
 
-#### Instruccion EnviarMensaje
+### Instruccion EnviarMensaje
 
 Esta instruccion se utiliza para enviar un valor a un receptor determinado, siendo una variable robot el receptor
 
@@ -850,7 +852,7 @@ Ejemplo de uso
 
 <br>
 
-#### Instruccion RecibirMensaje
+### Instruccion RecibirMensaje
 
 Esta instruccion se utiliza para recibir un valor de un emisor determinado o no determinado, siendo una variable robot el emisor
 
@@ -969,8 +971,8 @@ Estructura
         fin
 
 > IMPORTANTE:
-> - *Los modulos pueden no necesitar comunicacion de datos, en ese caso se crea el modulo sin parametros solo indicando el nombreDelModulo*
-> - *Los modulos pueden no necesitar variables locales, en ese caso no se crea la seccion de variables*
+> - Los modulos pueden no necesitar comunicacion de datos, en ese caso se crea el modulo sin parametros solo indicando el nombreDelModulo
+> - Los modulos pueden no necesitar variables locales, en ese caso no se crea la seccion de variables
 
 El nombreDelModulo es lo que permite el llamado al modulo, en otras palabras lo que permite que se ejecute el codigo dentro de este
 
@@ -1173,10 +1175,6 @@ Estas son definiciones de terminos y conceptos utilizados en el documento
 1. Inicializar: es darle el primer valor
 
 1. Asignar: es darle un valor a una variable
-
-1. Parametro actual: son las variables o valores que se le envian a un modulo
-
-1. Parametro formal: son las variables donde se reciben los valores que necesita el modulo para realizar su/s tareas/s y donde de ser necesario devuelve informacion
 
 1. Condicion: valor booleano u operacion logica ( tambien puede ser conjunto de operaciones logicas ) que determina si se realiza o no determinada instruccion/es+
 
