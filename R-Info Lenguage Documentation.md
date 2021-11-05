@@ -1,8 +1,12 @@
-# R-Info Documentacion
+# Documentacion Lenguaje R-Info
 
 En el siguiente documento se detalla la informacion pertinente para entender y escribir en el lenguage de programacion R-Info
 
 
+> **El uso de este material es bajo el concentimiento propio del usuario** 
+
+
+<br>
 <br>
 <br>
 
@@ -26,6 +30,7 @@ En el siguiente documento se detalla la informacion pertinente para entender y e
     - [Accion](#accion)
     - [Desplazamiento](#desplazamiento)
     - [Comunicacion](#comunicacion)
+    - [Generacion](#generacion)
 - [Secciones](#secciones)
     - [programa](#programa)
     - [procesos](#procesos)
@@ -38,11 +43,12 @@ En el siguiente documento se detalla la informacion pertinente para entender y e
 
 <br>
 <br>
+<br>
 
 
 ## Que es R-Info
 
-R-Info es un entorno de programacion donde se aprende conceptos basicos sobre como se constituye un programa y como se escribe uno, esto lo hace de manera sencilla ( con instrucciones y datos elementales o basicos en idioma español ) y didacticamente al ser un robot o varios , ubicado dentro de un mapa, el que realiza el algoritmo creado por programador
+R-Info es un entorno de programacion donde se aprende conceptos basicos sobre como se constituye un programa y como se escribe uno, esto lo hace de manera sencilla ( con instrucciones y datos elementales o basicos en idioma español ) y didacticamente al ser un robot o varios, ubicado dentro de un mapa, el que realiza el algoritmo creado por programador
 
 Este entorno ofrece la posibilidad de ademas de aprender lo ya mencionado tambien tiene la capacidad de trabajar con el paradigma de programacion concurrente ya que puede coexistir mas de un robot en el mismo mapa de manera que el programa tendra que estar preparado para esto si se usa mas de un robot
 
@@ -51,6 +57,7 @@ Sobre el mapa donde interactuan los robots este es una matriz de 100 filas y 100
 [indice](#indice)
 
 
+<br>
 <br>
 <br>
 
@@ -99,11 +106,12 @@ La estructura basica de un programa consiste de las siguientes secciones
 
     Es el apartado donde se asignan la/s area/s y el posicionamiento inicial en el mapa para cada variable robot que exista
 
-*IMPORTANTE: todas las secciones se detallan en el apartado de [Secciones](#secciones)*
+> IMPORTANTE: todas las secciones se detallan en el apartado de [Secciones](#secciones)
 
-[indice ⬆](#indice)
+[indice](#indice)
 
 
+<br>
 <br>
 <br>
 
@@ -112,7 +120,9 @@ La estructura basica de un programa consiste de las siguientes secciones
 
 Para trabajar con informacion o valores se disponen dos formas de representacion
 
+
 <br>
+
 
 numero
 
@@ -136,9 +146,10 @@ booleano
         - Existencia o inexistencia
         - Permitido/habilitado o no permitido/no habilitado
 
-[indice ⬆](#indice)
+[indice](#indice)
 
 
+<br>
 <br>
 <br>
 
@@ -332,6 +343,7 @@ Su tabla de verdad con valores numericos es:
 
 
 <br>
+<br>
 
 
 ### Aritmeticos
@@ -384,6 +396,7 @@ El valor a dar puede ser un valor explicito u otra variable
 
 
 <br>
+<br>
 
 
 ### Encadenamiento
@@ -414,13 +427,14 @@ Ejemplo con numeros y booleanos
 
 
 <br>
+<br>
 
 
 ### Parentesis
 
 Los parentesis son de gran importancia ya que permiten denotar prioridad a la hora de la resolucion de un encadenamiento de operaciones, como se bio anteriormente en determinadas circunstancias es necesario indicar la prioridad para una correcta operacion y tambien para evitar confusiones
 
-*IMPORTANTE: siempre que existe "(", un parentesis de apertura, debe existir su correspondiente ")", parentesis de cierre*
+> IMPORTANTE: siempre que existe un " ( ", un parentesis de apertura, debe existir su correspondiente " ) ", parentesis de cierre
 
 Reestructuracion de ejemplo previo
 
@@ -440,9 +454,10 @@ Por ejemplo
 
 [Operadores ⬆](#operadores)
 
-[indice ⬆](#indice)
+[indice](#indice)
 
 
+<br>
 <br>
 <br>
 
@@ -451,7 +466,10 @@ Por ejemplo
 
 Una variable es un espacio de memoria donde se guarda algun valor que representa cierto dato, este espacio se representa para el programador con el nombre que se le da a la variable y a travez de la utilizacion del nombre se puede acceder al valor para leerlo o cambiarlo
 
+
 <br>
+<br>
+
 
 ### Declaracion
 
@@ -531,14 +549,15 @@ Escritura
 
         validacionOpuesta := ~ validacionOpuesta
     
-    Es muy Importante resaltar que la variable a ser escrita puede ser leida para el calculo del valor a escribir en ella ya que primero se calcula el valor final a escribir y luego se guarda
+> IMPORTANTE: la variable a ser escrita puede ser leida para el calculo del valor a escribir en ella ya que primero se calcula el valor final a escribir y luego se guarda
 
 
 [Variables dato ⬆](#variables-dato)
 
-[indice ⬆](#indice)
+[indice](#indice)
 
 
+<br>
 <br>
 <br>
 
@@ -553,7 +572,9 @@ Estas se dividen en
 - [Accion](#accion)
 - [Desplazamiento](#desplazamiento)
 - [Comunicacion](#comunicacion)
+- [Generacion](#generacion)
 
+<br>
 <br>
 
 ### Control
@@ -713,7 +734,7 @@ Existen las siguientes instruccion
 | depositarFlor | deposita una flor del inventario en la esquina actual |
 | depositarPapel | deposita un papel del inventario en la esquina actual |
 
-*IMPORTANTE: de no existir el elemento para la accion ( flor o papel ) el resultado es un error*
+> IMPORTANTE: de no existir el elemento para la accion ( flor o papel ) el resultado es un error
 
 [Instrucciones ⬆](#instrucciones)
 
@@ -729,7 +750,7 @@ Para el desplazamiento del robot en el mapa existen las siguientes instrucciones
 | derecha |
 | Pos( avenida, calle ) |
 
-*IMPORTANTE: tener en cuenta que los desplazamientos tienen que ser validos con respecto a las dimensiones del mapa, el area designada al robot y la posicion de los otros robots de existir otros*
+> IMPORTANTE: tener en cuenta que los desplazamientos tienen que ser validos con respecto a las dimensiones del mapa, el area designada al robot y la posicion de los otros robots de existir otros
 
 <br>
 
@@ -798,7 +819,7 @@ Para la comunicacion con el usuario, en otras palabras mostrar informacion en pa
 | :-: |
 | Informar( 'cadenaDeCaracteres', valor ) |
 
-*IMPORTANTE: el primer parametro no es necesario, puede no utilizarse. El segundo parametro es un valor explicito o variable de cualquier tipo*
+> IMPORTANTE: el primer parametro no es necesario, puede no utilizarse. El segundo parametro es un valor explicito o variable de cualquier tipo
 
 Ejemplo de uso
 
@@ -817,7 +838,7 @@ Esta instruccion se utiliza para enviar un valor a un receptor determinado, sien
 | :-: |
 | EnviarMensaje( valor, nombreVariableRobot ) |
 
-*IMPORTANTE: el primer parametro es un valor explicito o variable de cualquier tipo*
+> IMPORTANTE: el primer parametro es un valor explicito o variable de cualquier tipo
 
 Esta instruccion es asincronica, es decir, se ejecuta y continua la ejecucion. Al emisor del mensaje no le afecta si el receptor esta esperando o no el mensaje
 
@@ -858,34 +879,281 @@ Ejemplo de uso
 
 [Instrucciones ⬆](#instrucciones)
 
-[indice ⬆](#indice)
+<br>
+
+### Generacion
+
+Sobre generacion existe una unica instruccion para generar valores de tipo numero aleatorios dentro de un rango indicado
+
+La instruccion es
+
+| Sintaxis |
+| :-: |
+| Random( variableReceptora, valorMinimo, valorMaximo ) |
+
+> IMPORTANTE: el valor minimo debe ser menor al maximo de lo contrario hay error, estos valores pueden ser explicitos o variables
+
+Ejemplo de uso
+
+    Random( avRandom, 1, 50 )
+    Random( cant, 10, max )
+
+[Instrucciones ⬆](#instrucciones)
+
+[indice](#indice)
 
 
+<br>
 <br>
 <br>
 
 
 ## Secciones
 
-Un programa en este lenguage se constituye de las siguientes secciones que se encargan cada una de definir un aspecto del programa. Estas se detallan a continuacion
+Un programa en este lenguage se constituye de secciones ( detalladas a continuacion ) que se encargan cada una de definir un aspecto del programa
+
+Estas se dividen en
+- [programa](#programa)
+- [procesos](#procesos)
+- [areas](#areas)
+- [robots](#robots)
+- [variables](#variables)
+- [comenzar y fin](#comenzar-y-fin)
+
 
 <br>
+<br>
+
 
 ### programa
 
+Esta es la seccion donde se le asigna un nombre al programa
+
+Estructura
+
+    programa nombre_del_programa
+
+El nombre del programa puede estar constituido por:
+
+- Letras minusculas y MAYUSCULAS
+- Numeros
+- Guiones "-" medios y "_" bajos
+
+Ejemplo de uso
+
+    programa ejercicio_1
+    programa TP1-E3
+
+[Secciones ⬆](#secciones)
+
+<br>
+
 ### procesos
+
+Esta es la seccion donde se crean modulos, estos pueden tener o no parametros
+
+Estructura
+
+    procesos
+        proceso nombreDelModulo( parametros )
+
+        variables
+            declaracion de
+            variables locales
+            al modulo
+        
+        comenzar
+            algoritmo
+            que realiza
+            el modulo
+        fin
+
+> IMPORTANTE:
+> - *Los modulos pueden no necesitar comunicacion de datos, en ese caso se crea el modulo sin parametros solo indicando el nombreDelModulo*
+> - *Los modulos pueden no necesitar variables locales, en ese caso no se crea la seccion de variables*
+
+El nombreDelModulo es lo que permite el llamado al modulo, en otras palabras lo que permite que se ejecute el codigo dentro de este
+
+Para una comunicacion de datos entre el algoritmo del modulo y el lugar donde se lo llama se utilizan los parametros
+
+A los parametros en la creacion del modulo se los denomina parametros formales y a los parametros en el llamado al modulo se los denomina parametros actuales
+
+- Parametros formales
+
+    Un parametro formal tiene la siguiente declaracion
+
+        tipoDeParametro nombreDelParametro : tipoDeDato
+    
+    Un parametro puede ser de dos tipos
+
+    - E : entrada
+    - ES : entrada salida
+
+    Tipo E
+
+    El tipo E significa que el parametro solo es para comunicar informacion hacia el modulo
+
+    Tipo ES
+
+    El tipo ES significa que el parametro es para comunicar informacion con hacia el modulo y a su vez devolver informacion hacia el exterior del modulo
+
+    El nombre del parametro funcion como una variable en la cual se carga el valor dado en el llamado y/o se devuelve el valor al llamado
+
+    El tipo de dato define el tipo de variable
+
+    Si el modulo requiere mas de un parametro, estos se separan con " ; "
+
+- Parametros actuales
+
+    Los parametros actuales son los que envian la informacion hacia el modulo y/o reciben la informacion que este devuelva
+
+    En el caso que el parametro formal sea de tipo E, el actual correspondiente puede ser bien un valor explicito o una variable
+
+    En el caso que el parametro formal sea de tipo ES, el actual correspondiente solo puede ser una variable ya que en ella se guarda la devolucion del modulo
+
+    Si el modulo tiene mas de un parametro, estos se separan con " , "
+
+Los parametros formales y actuales se vinculan por la posicion, en otras palabras el primer formal con el primer actual y asi con los sucesibos
+
+En el llamado al modulo debe existir igual cantidad de parametros que en la creacion de este y los tipos de datos que representa cada uno debe corresponder con su correspondiente en terminos de posiciones
+
+Ejemplos de uso
+
+    procesos
+        proceso sumarEsquinasVaciasCalle( ES cantidad: numero )
+        variables
+            aux: numero
+        comenzar
+            aux:= 0
+            si ( ~( HayFlorEnLaEsquina | HayPapelEnLaEsquina ) )
+                    aux:= aux +1
+            repetir 99
+                mover
+                si ( ~( HayFlorEnLaEsquina | HayPapelEnLaEsquina ) )
+                    aux:= aux +1
+            cantidad:= cantidad + aux
+        fin
+
+        proceso calcularMaximo( E n: numero; ES max: numero )
+        comenzar
+            si ( n > max )
+                max:= n
+        fin
+
+        proceso hacerCuadrado3
+        comenzar
+            repetir 4
+                repetir 3
+                    mover
+                derecha
+        fin
+
+Dentro de un modulo puede llamarse a otros modulos, de esta manera se produce un anidamiento de modulos que es positivo siempre y cuando se consiga una separacion de tareas que aumente la legibilidad y reusabilidad del codigo
+
+Ejemplo de uso
+
+    procesos
+        proceso juntarFlores
+        comenzar
+            mientras HayFlorEnLaEsquina
+                tomarFlor
+        fin
+
+        proceso recorrerCalles( E cantCalles: numero )
+        variables
+            sigCa, i: numero
+        comenzar
+            sigCa:= PosCa
+            i:= 0
+            repetir cantCalles
+                i:= i +1
+                repetir 99
+                    juntarFlores
+                    mover
+                juntarFlores
+                si ( i < cantCalles )
+                    sigCa:= sigCa +1
+                    Pos( 1, sigCa)
+        fin
+
+[Secciones ⬆](#secciones)
+
+<br>
 
 ### areas
 
+Esta es la seccion donde se crean areas del mapa donde los robots podran interactuar. Las areas son regiones cuadradas del mapa donde las avenidas y calles que componen cada una solo pueden estar incluidas en una unica declaracion de area
+
+Estructura
+
+    areas
+
+        nombreDelArea : tipoDeArea( region )
+
+El nombre del area es lo que permite mas adelante referenciar esta definicion en la asignacion de areas de un robot
+
+Existen tres tipos de areas:
+
+- AreaC : area compartida
+- AreaP : area privada
+- AreaPC : area parcialmente compartida
+
+AreaC
+
+Este tipo es para definir que cierta region es compartida por los robots, esto quiere decir que a todos los robots se le asiganara esta area, consecuentemente quiere decir que podran interactuar en esta region
+
+AreaP
+
+Este tipo es para definir que cierta region es de un unico robot, esto quiere decir que solo a un robot se le asignara esta area, consecuentemente este es el unico que podra interactuar en esta region
+
+AreaPC
+
+Este tipo es para definir que cierta region es compartida por al menos dos robots y no es compartida por al menos un robot, esto quiere decir que se le asigna a almenos 2 robots y a almenos 1 no
+
+La region es un cuadrado que se delimita por dos conjuntos:
+
+- Avenida y calle inicial
+- Avenida y calle final
+
+En ambos casos la avenida y calle estan incluidas en la region
+
+Se declara de la siguiente manera
+
+    ( avenidaInicial, calleInicial, avenidaFinal, calleFinal )
+
+Ejemplo de uso
+
+    areas
+        area1 : AreaC( 1, 1, 1, 1 )
+        zonaPrivada : AreaP( 11, 1, 100, 10 )
+        areaTrabajo : AreaPC( 50, 50, 55, 60 )
+
+> IMPORTANTE: los valores iniciales deben ser menores o iguales a los valores finales, ademas se debe respetar el tamaño del mapa
+
+[Secciones ⬆](#secciones)
+
+<br>
+
 ### robots
+
+[Secciones ⬆](#secciones)
+
+<br>
 
 ### variables
 
+[Secciones ⬆](#secciones)
+
+<br>
+
 ### comenzar y fin
 
-[indice ⬆](#indice)
+[Secciones ⬆](#secciones)
+
+[indice](#indice)
 
 
+<br>
 <br>
 <br>
 
@@ -925,6 +1193,7 @@ Estas son definiciones de terminos y conceptos utilizados en el documento
 [indice](#indice)
 
 
+<br>
 <br>
 <br>
 
