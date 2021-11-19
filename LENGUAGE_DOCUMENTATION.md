@@ -6,12 +6,12 @@ En el siguiente documento se detalla la informacion pertinente para entender y e
 > **El uso de este material es bajo el consentimiento del propio usuario** 
 
 
-<br>
-<br>
-<br>
+
+<br> <br> <br>
 
 
-## Indice
+
+## **Indice**
 - [Que es R-Info](#que-es-r-info)
 - [Estructura del programa](#estructura-del-programa)
 - [Tipos de dato](#tipos-de-dato)
@@ -41,12 +41,12 @@ En el siguiente documento se detalla la informacion pertinente para entender y e
 - [Glosario](#glosario)
 
 
-<br>
-<br>
-<br>
+
+<br> <br> <br>
 
 
-## Que es R-Info
+
+## **Que es R-Info**
 
 R-Info es un entorno de programacion donde se aprende conceptos basicos sobre como se constituye un programa y como se escribe uno, esto lo hace de manera sencilla ( con instrucciones y datos elementales o basicos en idioma español ) y didacticamente al ser un robot o varios, ubicado dentro de un mapa, el que realiza el algoritmo creado por programador
 
@@ -57,12 +57,12 @@ Sobre el mapa donde interactuan los robots este es una matriz de 100 filas y 100
 [indice](#indice)
 
 
-<br>
-<br>
-<br>
+
+<br> <br> <br>
 
 
-## Estructura del programa
+
+## **Estructura del programa**
 
 La estructura basica de un programa consiste de las siguientes secciones
 
@@ -77,10 +77,11 @@ La estructura basica de un programa consiste de las siguientes secciones
     variables
 
     comenzar
-
     fin
 
-<br>
+
+<br> <br>
+
 
 - **programa**
 
@@ -102,7 +103,7 @@ La estructura basica de un programa consiste de las siguientes secciones
 
     Es donde se crean las variables de un determinado tipo de robot
 
-- **comenzar y fin**
+- **comenzar fin**
 
     Es el apartado donde se asignan la/s area/s y el posicionamiento inicial en el mapa para cada variable robot que exista
 
@@ -111,20 +112,20 @@ La estructura basica de un programa consiste de las siguientes secciones
 [indice](#indice)
 
 
-<br>
-<br>
-<br>
+
+<br> <br> <br>
 
 
-## Tipos de dato
+
+## **Tipos de dato**
 
 Para trabajar con informacion o valores se disponen dos formas de representacion
 
 
-<br>
+<br> <br>
 
 
-### numero
+## numero
 
 El tipo de dato numero se utiliza para representar cantidades, es decir, como los el conjunto de los numeros enteros en matematica
 
@@ -132,7 +133,7 @@ Estos van desde el -2^31 ( -2.147.483.648 ) hasta el 2^31 ( 2.147.483.648 )
 
 <br>
 
-### booleano
+## booleano
 
 El tipo de dato booleano se utiliza para representar si algo es verdad o si algo es falso, es decir, la veracidad de una afirmacion o sentencia
 
@@ -149,21 +150,20 @@ Tambien se puede utilizar para representar:
 [indice](#indice)
 
 
-<br>
-<br>
-<br>
+
+<br> <br> <br>
 
 
-## Operadores
+
+## **Operadores**
 
 Dentro de la sintaxis del lenguaje se encuentran los operadores que son un conjunto de caracteres que permiten la manipulacion y/o comparacion de valores explicitos o en variables
 
 
-<br>
-<br>
+<br> <br>
 
 
-### Logicos
+## Logicos
 
 Los operadores logicos dan como resultado valores booleanos, es decir, verdad o falsedad dependiendo de las entradas
 
@@ -342,11 +342,10 @@ Su tabla de verdad con valores numericos es:
 [Operadores ⬆](#operadores)
 
 
-<br>
-<br>
+<br> <br>
 
 
-### Aritmeticos
+## Aritmeticos
 
 Los operadores aritmeticos dan como resultado valores numericos enteros dependiendo de las entradas
 
@@ -360,7 +359,7 @@ Operadores
 
 <br>
 
-### Asignacion
+## Asignacion
 
 Los operadores de asignacion se utilizan para decir el tipo de dato de una variable o para darle el valor a una variable
 
@@ -395,11 +394,10 @@ El valor a dar puede ser un valor explicito u otra variable
 [Operadores ⬆](#operadores)
 
 
-<br>
-<br>
+<br> <br>
 
 
-### Encadenamiento
+## Encadenamiento
 
 Como en las matematicas se pueden armar ecuaciones con valores y operaciones, esto no es la exepcion, por ende para encadenar operaciones solo se necesitan los valores/variables y operaciones que operen con estos
 
@@ -428,11 +426,10 @@ El resultado de lo anterior seria falso si no fuera problema el echo de que no q
 [Operadores ⬆](#operadores)
 
 
-<br>
-<br>
+<br> <br>
 
 
-### Parentesis
+## Parentesis
 
 Los parentesis son de gran importancia ya que permiten denotar prioridad a la hora de la resolucion de un encadenamiento de operaciones, como se bio anteriormente en determinadas circunstancias es necesario indicar la prioridad para una correcta operacion y tambien para evitar confusiones
 
@@ -459,21 +456,20 @@ Por ejemplo
 [indice](#indice)
 
 
-<br>
-<br>
-<br>
+
+<br> <br> <br>
 
 
-## Variables dato
+
+## **Variables dato**
 
 Una variable es un espacio de memoria donde se guarda algun valor que representa cierto dato, este espacio se representa para el programador con el nombre que se le da a la variable y a travez de la utilizacion del nombre se puede acceder al valor para leerlo o cambiarlo
 
 
-<br>
-<br>
+<br> <br>
 
 
-### Declaracion
+## Declaracion
 
 Para declarar variables se necesita crear el segmento de varibales escribiendo la palabra clave **variables**, este segmento no puede ser creado en cualquier lugar, revisar el apartado de [secciones](#secciones), ahi se detalla si en una seccion pueden existir variables dato
 
@@ -502,9 +498,11 @@ Si son del mismo tipo pueden declararse juntas separadas por una ","
 
 [Variables dato ⬆](#variables-dato)
 
-<br>
 
-### Operaciones
+<br> <br>
+
+
+## Operaciones
 
 Como se definio previamente las variables representan valores por lo tanto existen las operaciones que definimos tambien previamente
 
@@ -559,12 +557,12 @@ Para la escritura de un valor en una variable se debe poner la variable a escrib
 [indice](#indice)
 
 
-<br>
-<br>
-<br>
+
+<br> <br> <br>
 
 
-## Instrucciones
+
+## **Instrucciones**
 
 Dentro de la sintaxis del lenguaje se encuentran las instrucciones que permiten realizar determinadas tareas/acciones
 
@@ -576,10 +574,11 @@ Estas se dividen en
 - [Comunicacion](#comunicacion)
 - [Generacion](#generacion)
 
-<br>
-<br>
 
-### Control
+<br> <br>
+
+
+## Control
 
 Las intrucciones de control son las que permiten que se ejecute cierta codigo o no, con esto se consigue que un programa reaccione dependiendo de ciertos valores o circunstancias
 
@@ -697,9 +696,11 @@ Un ejemplo es calcular la potencia de cierto numero
 
 [Instrucciones ⬆](#instrucciones)
 
-<br>
 
-### Estado
+<br> <br>
+
+
+## Estado
 
 Las instrucciones de estado son las que devuelven un dato que representa el estado de cierta caracteristica del robot con respecto al mapa o a su inventario
 
@@ -721,9 +722,11 @@ Repecto del inventario existen las intrucciones
 
 [Instrucciones ⬆](#instrucciones)
 
-<br>
 
-### Accion
+<br> <br>
+
+
+## Accion
 
 Las instrucciones de accion son las que permiten al robot la interaccion de su inventario con respecto al mapa y viseversa
 
@@ -740,9 +743,11 @@ Existen las siguientes instruccion
 
 [Instrucciones ⬆](#instrucciones)
 
-<br>
 
-### Desplazamiento
+<br> <br>
+
+
+## Desplazamiento
 
 Para el desplazamiento del robot en el mapa existen las siguientes instrucciones
 
@@ -800,9 +805,11 @@ Ejemplos
 
 [Instrucciones ⬆](#instrucciones)
 
-<br>
 
-### Comunicacion
+<br> <br>
+
+
+## Comunicacion
 
 La comunicacion es la tranferencia de mensajes hacia el usuario o entre robots
 
@@ -881,9 +888,11 @@ Ejemplo de uso
 
 [Instrucciones ⬆](#instrucciones)
 
-<br>
 
-### Generacion
+<br> <br>
+
+
+## Generacion
 
 Sobre generacion existe una unica instruccion para generar valores de tipo numero aleatorios dentro de un rango indicado
 
@@ -905,12 +914,12 @@ Ejemplo de uso
 [indice](#indice)
 
 
-<br>
-<br>
-<br>
+
+<br> <br> <br>
 
 
-## Secciones
+
+## **Secciones**
 
 Un programa en este lenguage se constituye de secciones ( detalladas a continuacion ) que se encargan cada una de definir un aspecto del programa
 
@@ -923,11 +932,10 @@ Estas se dividen en
 - [comenzar y fin](#comenzar-y-fin)
 
 
-<br>
-<br>
+<br> <br>
 
 
-### programa
+## programa
 
 Esta es la seccion donde se le asigna un nombre al programa
 
@@ -948,9 +956,11 @@ Ejemplo de uso
 
 [Secciones ⬆](#secciones)
 
-<br>
 
-### procesos
+<br> <br>
+
+
+## procesos
 
 Esta es la seccion donde se crean modulos, estos pueden tener o no parametros
 
@@ -1080,9 +1090,11 @@ Ejemplo de uso
 
 [Secciones ⬆](#secciones)
 
-<br>
 
-### areas
+<br> <br>
+
+
+## areas
 
 Esta es la seccion donde se crean areas del mapa donde los robots podran interactuar. Las areas son regiones cuadradas del mapa donde las avenidas y calles que componen cada una solo pueden estar incluidas en una unica declaracion de area
 
@@ -1090,7 +1102,7 @@ Estructura
 
     areas
 
-        nombreDelArea : tipoDeArea( region )
+        nombreArea : tipoDeArea( region )
 
 El nombre del area es lo que permite mas adelante referenciar esta definicion en la asignacion de areas de un robot
 
@@ -1134,33 +1146,139 @@ Ejemplo de uso
 
 [Secciones ⬆](#secciones)
 
-<br>
 
-### robots
+<br> <br>
+
+
+## robots
+
+Esta es la seccion donde se definene los algoritmos que un cierto tipo de robot tendra que hacer durante la ejecucion del programa
+
+> IMPORTANTE: dos tipos de robot pueden tener los mismos algoritmos y ejecutarlos perfectamente, pero en el caso que dos tipos de robot tengan exactamente las mismas tareas lo mas adecuado es tener dos variables robots del mismo tipo, cada una trabajando "independientemente"
+
+Estructura
+
+    robots
+
+        robot nombreTipoRobot
+        variables
+            en el caso
+            de que se necesiten
+        comenzar
+            instrucciones
+            que componen
+            el algoritmo para
+            este tipo de robot
+        fin
+
+> IMPORTANTE: el nombreTipoRobot debe ser unico
+
+Cuando se declara el tipo de robot la seccion de variables solo debe ser agregada en el caso que el robot necesite variables numericas y/o booleanas de lo contrario no es necesario que este
+
+En el apartado comenzar ... fin es similar a el comenzar ... fin de la seccion de [procesos](#procesos) ya que es donde se crea el algoritmo del robot el cual al momento d ela ejecucion del programa se usara para que el robot realize tareas como moverse, interactuar con el mapa, realizar operaciones aritmeticas/logicas, comunicacion entre otras
+
+Normalmente un tipo de robot se define para un labor especifica que puede englobar tareas asociadas a esta labor, si se quiere hacer un uso optimo de los tipos de robot se descompone el problema en labores y se las asigna a diferentes robots para distribuir la carga de manera que se responda a la problematica de manera eficiente
+
+Ejemplo de uso
+
+    robots
+        robot corredorAvenida
+        comenzar
+            mientras (PosCa < 100)
+                mover
+            Informar('LlegueALaCalle',100)
+        fin
+
+        robot contadorFlores
+        variables
+            flores: numero
+        comenzar
+            flores:= 0
+            repetir 9
+                repetir 15
+                    juntarFlores(flores)
+                    mover
+                juntarFlores(flores)
+                Pos(PosAv + 1, 1)
+        fin
 
 [Secciones ⬆](#secciones)
 
-<br>
 
-### variables
+<br> <br>
+
+
+## variables
+
+Esta es la seccion donde se declaran las variables robot de un determinado tipo de robot cada una
+
+Las variables robot son las que se encargan de ejecutar los algoritmos que se definen en el programa
+
+Estructura
+
+    variables
+
+        nombreVariableRobot: nombreTipoRobot
+
+El nombreVariableRobot es el nombre que tendra el robot durante la ejecucion
+
+> IMPORTANTE: no puede haber dos variables robot con el mismo nombre, este debe ser unico
+
+El nombreTipoRobot es el nombre con el cual se definio un tipo de robot en la seccion de [robots](#robots)
+
+Ejemplo de uso
+
+    variables
+        robot1: trabajador
+        padre: recolector
+        rJefe: coordinador
+
 
 [Secciones ⬆](#secciones)
 
-<br>
 
-### comenzar y fin
+<br> <br>
+
+
+## comenzar y fin
+
+Esta es la seccion donde se le asignan las areas correspondientes a cada variable robot y ademas su correspondiente posicionamiento inicial en el mapa
+
+Estructura
+
+    comenzar
+
+        AsignarArea( nombreVariableRobot, nombreArea )
+        Iniciar( nombreVariableRobot, avenida, calle )
+    
+    fin
+
+> IMPORTANTE: el nombreArea debe estar definido correctamente en la seccion de [areas](#areas) de igual manera que el nombreVariablesRobot debe estar definido correctamente en la seccion de [variables](#variables). Los valores indicados en el iniciar deben pertener a alguna de de las areas asignadas previamente
+
+A una variable robot se le pueden asignar multiples areas (siempre y cuando se respete el tipo de area definido) pero unicamente se incia en un punto del mapa
+
+Ejemplo de uso:
+
+    comenzar
+        AsignarArea( robot4, cuadrante )
+        AsignarArea( robot4, puntoPartida )
+        AsignarArea( jefe, areaJefe )
+
+        Iniciar( jefe, 1, 1 )
+        Iniciar( robot4, 50, 1 )
+    fin
 
 [Secciones ⬆](#secciones)
 
 [indice](#indice)
 
 
-<br>
-<br>
-<br>
+
+<br> <br> <br>
 
 
-## Glosario
+
+## **Glosario**
 
 Estas son definiciones de terminos y conceptos utilizados en el documento
 
@@ -1191,11 +1309,11 @@ Estas son definiciones de terminos y conceptos utilizados en el documento
 [indice](#indice)
 
 
-<br>
-<br>
-<br>
+
+<br> <br> <br>
+
 
 
 Hecho por compañeros de la Facultad
 
-Fin del documento
+Fin del documento.
