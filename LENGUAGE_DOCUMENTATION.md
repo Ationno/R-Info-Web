@@ -1,6 +1,6 @@
-# Documentacion Lenguaje R-Info
+# Documentación Lenguaje R-Info
 
-En el siguiente documento se detalla la informacion pertinente para entender y escribir en el lenguage de programacion R-Info
+En el siguiente documento se detalla la información pertinente para entender y escribir en el lenguage de programación R-Info.
 
 
 > **El uso de este material es bajo el consentimiento del propio usuario** 
@@ -12,25 +12,25 @@ En el siguiente documento se detalla la informacion pertinente para entender y e
 
 
 ## **Indice**
-- [¿Qué es R-Info?](#que-es-r-info)
+- [¿Qué es R-Info?](#¿Qué-es-r-info?)
 - [Estructura del programa](#estructura-del-programa)
 - [Tipos de dato](#tipos-de-dato)
 - [Operadores](#operadores)
-    - [Lógicos](#logicos)
-    - [Aritméticos](#aritmeticos)
-    - [Asignación](#asignacion)
+    - [Lógicos](#lógicos)
+    - [Aritméticos](#aritméticos)
+    - [Asignación](#asignación)
     - [Encadenamiento](#encadenamiento)
-    - [Paréntesis](#parentesis)
+    - [Paréntesis](#paréntesis)
 - [Variables dato](#variables-dato)
-    - [Declaración](#declaracion)
+    - [Declaración](#declaración)
     - [Operaciones](#operaciones)
 - [Instrucciones](#instrucciones)
     - [Control](#control)
     - [Estado](#estado)
-    - [Acción](#accion)
+    - [Acción](#acción)
     - [Desplazamiento](#desplazamiento)
-    - [Comunicación](#comunicacion)
-    - [Generación](#generacion)
+    - [Comunicación](#comunicación)
+    - [Generación](#generación)
 - [Secciones](#secciones)
     - [programa](#programa)
     - [procesos](#procesos)
