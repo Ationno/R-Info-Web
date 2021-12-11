@@ -12,25 +12,25 @@ En el siguiente documento se detalla la informacion pertinente para entender y e
 
 
 ## **Indice**
-- [Que es R-Info](#que-es-r-info)
+- [¿Qué es R-Info?](#que-es-r-info)
 - [Estructura del programa](#estructura-del-programa)
 - [Tipos de dato](#tipos-de-dato)
 - [Operadores](#operadores)
-    - [Logicos](#logicos)
-    - [Aritmeticos](#aritmeticos)
-    - [Asignacion](#asignacion)
+    - [Lógicos](#logicos)
+    - [Aritméticos](#aritmeticos)
+    - [Asignación](#asignacion)
     - [Encadenamiento](#encadenamiento)
-    - [Parentesis](#parentesis)
+    - [Paréntesis](#parentesis)
 - [Variables dato](#variables-dato)
-    - [Declaracion](#declaracion)
+    - [Declaración](#declaracion)
     - [Operaciones](#operaciones)
 - [Instrucciones](#instrucciones)
     - [Control](#control)
     - [Estado](#estado)
-    - [Accion](#accion)
+    - [Acción](#accion)
     - [Desplazamiento](#desplazamiento)
-    - [Comunicacion](#comunicacion)
-    - [Generacion](#generacion)
+    - [Comunicación](#comunicacion)
+    - [Generación](#generacion)
 - [Secciones](#secciones)
     - [programa](#programa)
     - [procesos](#procesos)
@@ -46,13 +46,13 @@ En el siguiente documento se detalla la informacion pertinente para entender y e
 
 
 
-## **Que es R-Info**
+## **¿Qué es R-Info?**
 
-R-Info es un entorno de programacion donde se aprende conceptos basicos sobre como se constituye un programa y como se escribe uno, esto lo hace de manera sencilla ( con instrucciones y datos elementales o basicos en idioma español ) y didacticamente al ser un robot o varios, ubicado dentro de un mapa, el que realiza el algoritmo creado por programador
+R-Info es un entorno de programación donde se aprende conceptos básicos sobre como se constituye un programa y como se escribe uno, esto lo hace de manera sencilla ( con instrucciones y datos elementales o básicos en idioma español ) y didacticamente al ser un robot o varios, ubicado dentro de un mapa, el que realiza el algoritmo creado por programador.
 
-Este entorno ofrece la posibilidad de ademas de aprender lo ya mencionado tambien tiene la capacidad de trabajar con el paradigma de programacion concurrente ya que puede coexistir mas de un robot en el mismo mapa de manera que el programa tendra que estar preparado para esto si se usa mas de un robot
+Este entorno ofrece la posibilidad de ademas de aprender lo ya mencionado también tiene la capacidad de trabajar con el paradigma de programación concurrente, ya que puede coexistir mas de un robot en el mismo mapa, de manera que el programa tendrá que estar preparado para esto si se usa mas de un robot.
 
-Sobre el mapa donde interactuan los robots este es una matriz de 100 filas y 100 columnas que simula una ciudad, llamandoce calles a las filas y avenidas a las columnas. El extremo inferior izquierdo es la avenida 1, calle 1 y el extremo superior derecho es la avenida 100, calle 100
+Sobre el mapa donde interactuan los robots este es una matriz de 100 filas y 100 columnas que simula una ciudad, llamándose calles a las filas y avenidas a las columnas. El extremo inferior izquierdo es la avenida 1, calle 1 y el extremo superior derecho es la avenida 100, calle 100.
 
 [indice](#indice)
 
@@ -64,7 +64,7 @@ Sobre el mapa donde interactuan los robots este es una matriz de 100 filas y 100
 
 ## **Estructura del programa**
 
-La estructura basica de un programa consiste de las siguientes secciones
+La estructura básica de un programa consiste de las siguientes secciones:
 
     programa
 
@@ -85,27 +85,27 @@ La estructura basica de un programa consiste de las siguientes secciones
 
 - **programa**
 
-    Es donde se le da el nombre al programa
+    Es donde se le da el nombre al programa.
 
 - **procesos**
 
-    Es donde se pueden crear modulos (segmentos de codigo) que realizen una o varias tareas
+    Es donde se pueden crear módulos (segmentos de código) que realizen una o varias tareas.
 
 - **areas**
 
-    Es donde se declaran los tipos de areas del mapa
+    Es donde se declaran los tipos de areas del mapa.
 
 - **robots**
 
-    Es donde se crean los algoritmos que determinan la interaccion y/o acciones que realiza determinado tipo de robot
+    Es donde se crean los algoritmos que determinan la interacción y/o acciones que realiza determinado tipo de robot.
 
 - **variables**
 
-    Es donde se crean las variables de un determinado tipo de robot
+    Es donde se crean las variables de un determinado tipo de robot.
 
 - **comenzar fin**
 
-    Es el apartado donde se asignan la/s area/s y el posicionamiento inicial en el mapa para cada variable robot que exista
+    Es el apartado donde se asignan la/s area/s y el posicionamiento inicial en el mapa para cada variable robot que exista.
 
 > IMPORTANTE: todas las secciones se detallan en el apartado de [Secciones](#secciones)
 
@@ -119,15 +119,15 @@ La estructura basica de un programa consiste de las siguientes secciones
 
 ## **Tipos de dato**
 
-Para trabajar con informacion o valores se disponen dos formas de representacion
+Para trabajar con información o valores se disponen dos formas de representación:
 
 
 <br> <br>
 
 
-## numero
+## número
 
-El tipo de dato numero se utiliza para representar cantidades, es decir, como los el conjunto de los numeros enteros en matematica
+El tipo de dato número se utiliza para representar cantidades, es decir, como el conjunto de los números enteros en matemática.
 
 Estos van desde el -2^31 ( -2.147.483.648 ) hasta el 2^31 ( 2.147.483.648 )
 
@@ -135,14 +135,14 @@ Estos van desde el -2^31 ( -2.147.483.648 ) hasta el 2^31 ( 2.147.483.648 )
 
 ## booleano
 
-El tipo de dato booleano se utiliza para representar si algo es verdad o si algo es falso, es decir, la veracidad de una afirmacion o sentencia
+El tipo de dato booleano se utiliza para representar si algo es verdad o si algo es falso, es decir, la veracidad de una afirmación o sentencia.
 
-Sus dos unicos posible valores son
+Sus dos unicos posible valores son:
 
-- "V" para representar la verdad
-- "F" para representar la falsedad
+- "V" para representar la verdad.
+- "F" para representar la falsedad.
 
-Tambien se puede utilizar para representar:
+También se puede utilizar para representar subjetivamente como:
 
 - Existencia o inexistencia
 - Permitido/habilitado o no permitido/no habilitado
@@ -157,42 +157,42 @@ Tambien se puede utilizar para representar:
 
 ## **Operadores**
 
-Dentro de la sintaxis del lenguaje se encuentran los operadores que son un conjunto de caracteres que permiten la manipulacion y/o comparacion de valores explicitos o en variables
+Dentro de la sintaxis del lenguaje se encuentran los operadores que son un conjunto de caracteres que permiten la manipulación y/o comparación de valores explícitos o en variables.
 
 
 <br> <br>
 
 
-## Logicos
+## Lógicos
 
-Los operadores logicos dan como resultado valores booleanos, es decir, verdad o falsedad dependiendo de las entradas
+Los operadores lógicos dan como resultado valores booleanos, es decir, verdad o falsedad dependiendo de las entradas.
 
 Operadores para datos booleanos:
 | Sintaxis | Nombre/s |
 | :-: | :-: |
-| ~ | negacion , no |
-| &#124; | disyuncion , ó |
-| & | conjuncion , y |
-| = | igualacion , igual |
+| ~ | negación , no |
+| &#124; | disyunción , ó |
+| & | conjunción , y |
+| = | igualación , igual |
 | <> | diferente , distinto |
 
-Operadores para datos numericos
+Operadores para datos númericos:
 | Sintaxis | Nombre/s |
 | :-: | :-: |
-| = | igualacion , igual |
+| = | igualación , igual |
 | <> | diferente , distinto |
 | < | menor |
 | &#62; | mayor |
 | <= | menor ó igual | 
 | &#62;= | mayor ó igual |
 
-> Para simplificacion verdad equivaldra a V y falsedad a F
+> Para simplificación verdad equivaldra a V y falsedad a F.
 
 <br>
 
 ### Operador ~
 
-El no es un operador unario (se aplica en solo un valor), este cambia el valor logico al opuesto
+El no es un operador unario (se aplica en solo un valor), este cambia el valor lógico al opuesto.
 
 Su tabla de verdad es:
 
@@ -205,7 +205,7 @@ Su tabla de verdad es:
 
 ### Operador |
 
-El o es un operador binario (se aplica entre dos valores), este da como resultado verdad si almenos uno de los valores es verdad
+El o es un operador binario (se aplica entre dos valores), este da como resultado verdad si almenos uno de los valores es verdad.
 
 Su tabla de verdad es:
 
@@ -220,7 +220,7 @@ Su tabla de verdad es:
 
 ### Operador &
 
-El y es un operador binario (se aplica entre dos valores), este da como resultado verdad si solo si ambos valores son verdad
+El y es un operador binario (se aplica entre dos valores), este da como resultado verdad si y solo si ambos valores son verdad.
 
 Su tabla de verdad es:
 
@@ -235,7 +235,7 @@ Su tabla de verdad es:
 
 ### Operador =
 
-El igual es un operador binario (se aplica entre dos valores), este da como resultado verdad si solo si ambos valores son iguales respetando que sean el mismo tipo de dato
+El igual es un operador binario (se aplica entre dos valores), este da como resultado verdad si y solo si ambos valores son iguales, respetando que sean el mismo tipo de dato.
 
 Su tabla de verdad con valores booleanos es:
 
@@ -246,7 +246,7 @@ Su tabla de verdad con valores booleanos es:
 | F = V | F |
 | V = V | V |
 
-Su tabla de verdad con valores numericos es:
+Su tabla de verdad con valores númericos es:
 
 | Entrada | Resultado |
 | :-: | :-: |
@@ -257,9 +257,9 @@ Su tabla de verdad con valores numericos es:
 
 <br>
 
-### Operador =
+### Operador <>
 
-El igual es un operador binario (se aplica entre dos valores), este da como resultado verdad si solo si ambos valores son diferentes respetando que sean el mismo tipo de dato
+El desigual es un operador binario (se aplica entre dos valores), este da como resultado verdad si y solo si ambos valores son diferentes, respetando que sean el mismo tipo de dato.
 
 Su tabla de verdad con valores booleanos es:
 
@@ -270,7 +270,7 @@ Su tabla de verdad con valores booleanos es:
 | F <> V | V |
 | V <> V | F |
 
-Su tabla de verdad con valores numericos es:
+Su tabla de verdad con valores númericos es:
 
 | Entrada | Resultado |
 | :-: | :-: |
@@ -283,9 +283,9 @@ Su tabla de verdad con valores numericos es:
 
 ### Operador <
 
-El menor es un operador binario (se aplica entre dos valores), este da como resultado verdad si solo si el primer valor es mas pequeño que el segundo
+El menor es un operador binario (se aplica entre dos valores), este da como resultado verdad si y solo si el primer valor es mas pequeño que el segundo.
 
-Su tabla de verdad con valores numericos es:
+Su tabla de verdad con valores númericos es:
 
 | Entrada | Resultado |
 | :-: | :-: |
@@ -298,7 +298,7 @@ Su tabla de verdad con valores numericos es:
 
 ### Operador >
 
-El mayor es un operador binario (se aplica entre dos valores), este da como resultado verdad si solo si el primer valor es mas grande que el segundo
+El mayor es un operador binario (se aplica entre dos valores), este da como resultado verdad si y solo si el primer valor es mas grande que el segundo.
 
 Su tabla de verdad con valores numericos es:
 
@@ -313,9 +313,9 @@ Su tabla de verdad con valores numericos es:
 
 ### Operador <=
 
-El menor o igual es un operador binario (se aplica entre dos valores), este da como resultado verdad si primer valor es mas pequeño que el segundo o si los dos valores son iguales
+El menor o igual es un operador binario (se aplica entre dos valores), este da como resultado verdad si el primer valor es mas pequeño que el segundo o si los dos valores son iguales.
 
-Su tabla de verdad con valores numericos es:
+Su tabla de verdad con valores númericos es:
 
 | Entrada | Resultado |
 | :-: | :-: |
@@ -328,9 +328,9 @@ Su tabla de verdad con valores numericos es:
 
 ### Operador >=
 
-El mayor o igual es un operador binario (se aplica entre dos valores), este da como resultado verdad si primer valor es mas grande que el segundo o si los dos valores son iguales
+El mayor o igual es un operador binario (se aplica entre dos valores), este da como resultado verdad si el primer valor es mas grande que el segundo o si los dos valores son iguales.
 
-Su tabla de verdad con valores numericos es:
+Su tabla de verdad con valores númericos es:
 
 | Entrada | Resultado |
 | :-: | :-: |
@@ -345,37 +345,37 @@ Su tabla de verdad con valores numericos es:
 <br> <br>
 
 
-## Aritmeticos
+## Aritméticos
 
-Los operadores aritmeticos dan como resultado valores numericos enteros dependiendo de las entradas
+Los operadores aritméticos dan como resultado valores númericos enteros dependiendo de las entradas.
 
 Operadores
-| Sintaxis | Funcion |
+| Sintaxis | Función |
 | :-: | :-: |
-| + | adicion , suma |
-| - | sustraccion , resta |
-| * | producto , multiplicacion |
-| / | , division |
+| + | adición , suma |
+| - | sustracción , resta |
+| * | producto , multiplicación |
+| / | , división |
 
 <br>
 
-## Asignacion
+## Asignación
 
-Los operadores de asignacion se utilizan para decir el tipo de dato de una variable o para darle el valor a una variable
+Los operadores de asignación se utilizan para decir el tipo de dato de una variable o para darle el valor a una variable.
 
 Operadores
-| Sintaxis | Funcion |
+| Sintaxis | Función |
 | :-: | :-: |
-| : | asignacion |
-| := | asignacion |
+| : | asignación |
+| := | asignación |
 
 <br>
 
 ### Operador :
 
-El : se utiliza para decir que x variable sera de cierto tipo
+El : se utiliza para decir que x variable sera de cierto tipo.
 
-| Utilizacion |
+| Utilización |
 | :-: |
 | (nombre variable) : (tipo de dato) |
 
@@ -383,13 +383,13 @@ El : se utiliza para decir que x variable sera de cierto tipo
 
 ### Operador :=
 
-El := se utiliza para decir que x variable asumira un valor respetando el tipo de dato que representa la variable
+El := se utiliza para decir que x variable asumirá un valor respetando el tipo de dato que representa la variable.
 
-| Utilizacion |
+| Utilización |
 | :-: |
 | (nombre variable) := (valor a dar) |
 
-El valor a dar puede ser un valor explicito u otra variable
+El valor a dar puede ser un valor explícito u otra variable.
 
 [Operadores ⬆](#operadores)
 
